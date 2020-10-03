@@ -1,0 +1,182 @@
+// Common Variables ===================================================
+// Colors ------------------------------------------------
+// Cool ......................
+$aqua:  #7FDBFF
+$blue:  #0074D9
+$navy:  #001F3F
+$olive: #3D9970
+$lime:  #01FF70
+
+// Warm .......................
+$yellow:  #FFDC00
+$orange:  #FF851B
+$red:     #FF4136
+$fuchsia: #F012BE
+$maroon:  #85144B
+$dark-red: #460000
+
+// Gray Scale ..................
+$white:  #fff
+$silver: #ddd
+$gray:   #aaa
+$dark-gray: #333
+$black:  #111
+
+// Font categories -------------------------------------
+
+// Web Safe Fonts ..................
+$font-category-safe-1: 'Raleway', sans-serif
+$font-category-safe-2: "Segoe UI", Arial, sans-serif
+
+// Google Fonts ....................
+$font-category-1: 'Quicksand', sans-serif
+$font-category-2: 'Abel', sans-serif
+
+// Responsive Sizes -------------------------------------
+// (for phones) ..................
+$small-max: 576px
+// (for tablet) ..................
+$medium-min: 576px
+// (landscape of tablet) .........
+$large-min: 769px
+// (for small Laptop) ............
+$xlarge-min: 992px
+// (for large laptop) ............
+$xxlarge-min: 1201px
+// (for 4k) ......................
+$xxxlarge-min: 1441px
+
+
+// Common Variables
+$commonSpace: 12
+$commonFontSize: 16
+// Mixins ===================================================
+
+// Responsive Classes -------------------------------------
+
+// (for tablet) ...................................
+=MEDIUM
+  @media only screen and (min-width: $medium-min)
+    @content
+
+// (landscape of tablet) ..........................
+=LARGE
+  @media only screen and (min-width: $large-min)
+    @content
+
+// (for small Laptop) .............................
+=XLARGE
+  @media only screen and (min-width: $xlarge-min)
+    @content
+
+// (for large laptop) .............................
+=XXLARGE
+  @media only screen and (min-width: $xxlarge-min)
+    @content
+
+// (for 4k) .......................................
+=XXXLARGE
+  @media only screen and (min-width: $xxxlarge-min)
+    @content
+
+=CUSTOM($customMinWidth)
+  @media only screen and (min-width: $customMinWidth)
+    @content
+
+=CUSTOMAX($customMaxWidth)
+  @media only screen and (max-width: $customMaxWidth)
+    @content
+
+=CUSTOMIN($customMinWidth)
+  @media only screen and (max-width: $customMinWidth)
+    @content
+
+// Key Frames ----------------------------------------
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+// Common bugs ---------------------------------------
+=clearfix
+  &:after,
+  &:before
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=flex_center_vertically($height)
+  display: flex
+  justify-content: center
+  flex-direction: column
+  height: $height
+
+=text_center($line-height)
+  text-align: center
+  line-height: $line-height
+
+=absolute_center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+=flex_center
+  display: flex
+  justify-content: center
+  align-items: center
+
+=hidden
+  display: none
+
+=show
+  display: block
+
+=noSelect
+  -khtml-user-select: none
+  -webkit-touch-callout: none
+  user-select: none
+
+=noCallout
+  -webkit-touch-callout: none
+
+=noAction
+  touch-action: none
+
+=imgNoClick
+  position: relative
+
+=imgNoClickCover
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+
+=focus_ring_issue
+  outline: -webkit-focus-ring-color auto 5px
+  // write this for &:focus
+
+=tap_highlight_issue
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-tap-highlight-color: transparent
+
+=break_words
+  word-wrap: break-word
+
+=wrap_words
+  overflow-wrap: break-word
+  word-wrap: break-word
+  hyphens: auto
+
+=img_align_with_text
+  margin-bottom: -5px
+  vertical-align: middle
