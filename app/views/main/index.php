@@ -7,7 +7,8 @@
     </head>
 
     <body>
-        <div>this is carazo</div>
+        <div>fuckeddsdsd
+        </div>
         <div class="main_container">yhvhv</div>
         <?php require APPROOT.'/views/_includes/_headerNavigation.php'; ?>
         <?php require APPROOT.'/views/_includes/_scriptIncludes.php'; ?>
