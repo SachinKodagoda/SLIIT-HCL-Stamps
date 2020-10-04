@@ -14,23 +14,24 @@ body
   margin: 0
   padding: 0
   width: 100%
-  min-height: 100vh
+  height: 100%
   transition: all 0.2s ease-in-out
   +noSelect
   +tap_highlight_issue
+  
 
 html
-  overflow-x: hidden
+  overflow: hidden
+  background: #FFE53B
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%)
 
 body
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
   font-weight: 400
-  display: flex
-  flex-direction: column
   color: $base-font-color
-  background: #FFE53B
-  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%)
+  background: transparent
+  overflow-y: auto
   // background-color: #08AEEA
   // background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%)
 

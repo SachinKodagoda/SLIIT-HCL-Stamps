@@ -33,7 +33,7 @@
         <div class="commonTopic">
             <div class="leftBorder"></div>
             <div class="middle">Find Your Stamp!</div>
-            <div class="rightBorder"></div>       
+            <div class="rightBorder"></div>
         </div>
         <form class="form">
             <input type="text" class="input_text" />
@@ -330,20 +330,78 @@
             </div>
         </div>
         <div class="pagination">
-            <div class="page arrow"><img src="./img/main/right-arrow.svg" alt="arrow" class="arrow filpX"></div>
+            <div class="page arrow"><img src="./img/main/right-arrow.svg" alt="arrow" class="arrow filpX" /></div>
             <div class="page">1</div>
             <div class="page">2</div>
             <div class="page selected">3</div>
             <div class="page">4</div>
             <div class="page">5</div>
-            <div class="page arrow"><img src="./img/main/right-arrow.svg" alt="arrow" class="arrow"></div>
+            <div class="page arrow"><img src="./img/main/right-arrow.svg" alt="arrow" class="arrow" /></div>
         </div>
         <div class="commonTopic">
             <div class="leftBorder"></div>
             <div class="middle">More Categories!</div>
             <div class="rightBorder"></div>
         </div>
-        <div class="moreCategory"></div>
+        <div class="moreCategory">
+            <div class="categoryCardOuter">
+                <div class="categoryCard">
+                    <img src="./img/main/stamp2.svg" alt="arrow" class="stampCategory" />
+                    <span class="stampCategoryTitle">Stamps</span>
+                    <span class="stampCategoryBtn">Readmore</span>
+                </div>
+            </div>
+            <div class="categoryCardOuter">
+                <div class="categoryCard">
+                    <img src="./img/main/email.svg" alt="arrow" class="souvenirCategory" />
+                    <span class="stampCategoryTitle">Souvenir Sheet</span>
+                    <span class="stampCategoryBtn">Readmore</span>
+                </div>
+            </div>
+            <div class="categoryCardOuter">
+                <div class="categoryCard">
+                    <img src="./img/main/paper.svg" alt="arrow" class="firstDayCategory" />
+                    <span class="stampCategoryTitle">First day Cover</span>
+                    <span class="stampCategoryBtn">Readmore</span>
+                </div>
+            </div>
+        </div>
+        <div class="commonTopic">
+            <div class="leftBorder"></div>
+            <div class="middle">More About Us!</div>
+            <div class="rightBorder"></div>
+        </div>
+        <div class="aboutUsContainer">
+            <div class="aboutUs">
+                <div class="about">
+                    <div class="aboutInner">
+                        <div class="accordion" id="firstAccordion"><span class="accTitle">What is our speciality?</span></div>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi, adipisci animi minus alias sequi ullam eveniet quis?</p>
+                        </div>
+
+                        <div class="accordion"><span class="accTitle">What is our goal?</span></div>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi, adipisci animi minus alias sequi ullam eveniet quis?</p>
+                        </div>
+
+                        <div class="accordion"><span class="accTitle">What is our customers think?</span></div>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi commodi, adipisci animi minus alias sequi ullam eveniet quis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advert">
+                    <div class="advertInner">Advertisement</div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+                <path fill="#000" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,122.7C480,139,600,213,720,234.7C840,256,960,224,1080,181.3C1200,139,1320,85,1380,58.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
+            </svg>
+        </div>
+        <div class="footerArea">
+            
+        </div>
 
     </div>
     <?php require APPROOT . '/views/_includes/_script.php'; ?>

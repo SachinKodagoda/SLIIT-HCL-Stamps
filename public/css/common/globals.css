@@ -155,7 +155,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   transition: all 0.2s ease-in-out;
   -khtml-user-select: none;
   -webkit-touch-callout: none;
@@ -167,19 +167,17 @@ body {
   -webkit-tap-highlight-color: transparent; }
 
 html {
-  overflow-x: hidden; }
+  overflow: hidden;
+  background: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%); }
 
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   font-weight: 400;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
   color: #111;
-  background: #FFE53B;
-  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%); }
+  background: transparent;
+  overflow-y: auto; }
 
 h1 {
   font-size: 36px; }
