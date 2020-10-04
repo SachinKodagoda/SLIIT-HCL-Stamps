@@ -63,20 +63,22 @@ function clearCache() {
 
 function watchTask() {
     browserSync.init({
-        // server: {
-        //   baseDir: outputBaseDir
-        // }
-        // watch: true,
-        // files: ['../app'],
         injectChanges: true,
-        proxy: '127.0.0.1/stamps',
+        proxy: 'http://127.0.0.1/stamps',
+        // online: true,
+        // tunnel: true,
         // watchOptions: {
         //     debounceDelay: 1000 // This introduces a small delay when watching for file change events to avoid triggering too many reloads
         // },
+        // ui: true,
+        // host: 'localhost',
+        // port: 8000,
+        // logLevel: 'silent',
         notify: false
     });
     watch(files.sassPath, sassTask);
     watch(files.jsPath, series(jsTask, reloadingTask));
+    watch(files.imgPath, series(imgTask, reloadingTask));
     watch('../app',reloadingTask);
 }
 

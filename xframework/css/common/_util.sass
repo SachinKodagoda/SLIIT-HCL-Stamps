@@ -27,7 +27,6 @@ $black:  #111
 // Web Safe Fonts ..................
 $font-category-safe-1: 'Raleway', sans-serif
 $font-category-safe-2: "Segoe UI", Arial, sans-serif
-
 // Google Fonts ....................
 $font-category-1: 'Quicksand', sans-serif
 $font-category-2: 'Abel', sans-serif
@@ -48,8 +47,8 @@ $xxxlarge-min: 1441px
 
 
 // Common Variables
-$commonSpace: 12
-$commonFontSize: 16
+$themeColor1: #FFE53B
+$themeColor2: #FF2525
 // Mixins ===================================================
 
 // Responsive Classes -------------------------------------
@@ -180,3 +179,9 @@ $commonFontSize: 16
 =img_align_with_text
   margin-bottom: -5px
   vertical-align: middle
+
+=overflow_ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+  text-overflow: ellipsis

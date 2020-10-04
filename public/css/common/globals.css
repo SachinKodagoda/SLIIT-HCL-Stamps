@@ -149,36 +149,37 @@ template {
 
 html,
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1;
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100vh;
+  transition: all 0.2s ease-in-out;
   -khtml-user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; }
 
 html {
   overflow-x: hidden; }
 
 body {
-  color: #111;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   font-weight: 400;
-  background-color: #85FFBD;
-  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  background-color: #FFE53B;
-  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
-  background-color: #08AEEA;
-  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #111;
+  background: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%); }
 
 h1 {
   font-size: 36px; }
@@ -204,7 +205,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 400;
   margin: 10px 0; }
 
@@ -239,7 +240,7 @@ i {
   vertical-align: middle; }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
   background-color: #000; }
 
 ::-webkit-scrollbar {
@@ -248,8 +249,16 @@ i {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #0074D9;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: #ccc;
   background-clip: content-box; }
+
+.filpX {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1); }
+
+.filpY {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1); }
 
 /*# sourceMappingURL=globals.css.map */
