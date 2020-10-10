@@ -4,7 +4,8 @@
 <head>
     <?php require APPROOT . '/views/_includes/_header.php'; ?>
     <link rel="stylesheet" type="text/css" href="./css/main/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/modules/header_navigation.css" />
+    <link rel="stylesheet" type="text/css" href="./css/modules/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/modules/footer.css" />
 </head>
 
 <body>
@@ -399,11 +400,9 @@
                 <path fill="#000" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,122.7C480,139,600,213,720,234.7C840,256,960,224,1080,181.3C1200,139,1320,85,1380,58.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
             </svg>
         </div>
-        <div class="footerArea">
-            
-        </div>
-
+        <div class="footerArea"></div>
     </div>
+    <?php require APPROOT . '/views/_includes/_footer.php'; ?>
     <?php require APPROOT . '/views/_includes/_script.php'; ?>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main/main.js" type="text/javascript"></script>
