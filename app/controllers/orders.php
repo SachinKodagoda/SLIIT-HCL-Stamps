@@ -1,6 +1,6 @@
 <?php
 
-class Main extends BaseController
+class Orders extends BaseController
 {
     public function index()
     {
@@ -10,5 +10,3 @@ class Main extends BaseController
         $this->view(strtolower(basename(__FILE__, '.php'))."/".__FUNCTION__, $values);
     }
 }
-
-

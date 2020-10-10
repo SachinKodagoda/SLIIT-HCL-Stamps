@@ -12,8 +12,8 @@ class Core
 
         // Check the url[0] element
         if (isset($url[0])) {
-            if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
-                $this->currentController = ucwords($url[0]);
+            if (file_exists('../app/controllers/' . strtolower($url[0]) . '.php')) {
+                $this->currentController = ucfirst($url[0]);
                 unset($url[0]);
             }
         }
@@ -24,8 +24,8 @@ class Core
 
         // Setup the page calling method
         if (isset($url[1])) {
-            if (method_exists($this->currentController, $url[1])) {
-                $this->currentMethod = $url[1];
+            if (method_exists($this->currentController, strtolower($url[1]))) {
+                $this->currentMethod = strtolower($url[1]);
                 unset($url[1]);
             }
         }
