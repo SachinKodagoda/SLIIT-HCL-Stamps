@@ -3,7 +3,7 @@ class Core
 {
     // Set the default route page details
     protected $currentController = 'Main';
-    protected $currentMethod = 'index';
+    protected $currentMethod = 'login';
     protected $params = [];
 
     public function __construct()
@@ -14,6 +14,7 @@ class Core
         if (isset($url[0])) {
             if (file_exists('../app/controllers/' . strtolower($url[0]) . '.php')) {
                 $this->currentController = ucfirst($url[0]);
+                $this->currentMethod = 'index';
                 unset($url[0]);
             }
         }
@@ -26,6 +27,7 @@ class Core
         if (isset($url[1])) {
             if (method_exists($this->currentController, strtolower($url[1]))) {
                 $this->currentMethod = strtolower($url[1]);
+                $this->currentMethod = 'index';
                 unset($url[1]);
             }
         }

@@ -7,7 +7,8 @@ class BaseController
         if (file_exists('../app/views/' . $view . '.php')) {
             require_once '../app/views/' . $view . '.php';
         } else {
-            die('View does not exist');
+            require_once '../app/views/page_404/index.php';
+            // die('View does not exist');
         }
     }
 }

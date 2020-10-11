@@ -1,0 +1,29 @@
+@import './includes/_util'
+.main_wrapper
+    font-size: 1.2rem
+    flex-grow: 1
+    flex-shrink: 0
+    background: transparentize(#fff, 0.48)
+    border-radius: 20px
+    margin: 0 8px 8px
+    padding: 8px
+    width: calc( 100% - 16px)
+    min-height: calc( 100% - 80px)
+    box-shadow: 0 15px 20px 1px rgba(0, 0, 0, 0.2)
+    position: relative
+    overflow: hidden
+    +MEDIUM
+       padding: 16px 
+       width: calc( 100% - 32px)
+       margin: 0 16px 16px
+    .page_dummy
+        font-size: 38px
+        font-weight: 900
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
