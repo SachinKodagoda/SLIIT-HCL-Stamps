@@ -4,9 +4,9 @@ class Registration extends BaseController
 {
     public function registration()
     {
-        $values = [
-            "data" => []
+        $data = [
+            'page' => __FUNCTION__
         ];
-        $this->view("/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $data);
     }
 }

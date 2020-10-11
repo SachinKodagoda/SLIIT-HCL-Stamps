@@ -4,9 +4,9 @@ class Sovenir extends BaseController
 {
     public function sovenir()
     {
-        $values = [
-            "data" => []
+        $data = [
+            'page' => __FUNCTION__
         ];
-        $this->view("/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $data);
     }
 }

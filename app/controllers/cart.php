@@ -4,9 +4,9 @@ class Cart extends BaseController
 {
     public function cart()
     {
-        $values = [
-            "data" => []
+        $data = [
+            'page' => __FUNCTION__
         ];
-        $this->view("/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $data);
     }
 }

@@ -101,6 +101,8 @@
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
     box-shadow: none; }
+  .header_navItem.active {
+    background: #ccc; }
 
 .header_cartItems {
   display: -ms-flexbox;

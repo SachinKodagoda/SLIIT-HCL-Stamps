@@ -4,9 +4,9 @@ class Postcard extends BaseController
 {
     public function postcard()
     {
-        $values = [
-            "data" => []
+        $data = [
+            'page' => __FUNCTION__
         ];
-        $this->view("/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $data);
     }
 }
