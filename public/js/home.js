@@ -4,7 +4,7 @@ var mySwiper = new Swiper(".swiper-container", {
     delay: 3000,
     disableOnInteraction: false
   },
-  allowTouchMove: false,
+  allowTouchMove: true,
   centeredSlides: true,
   effect: 'fade',
   pagination: {

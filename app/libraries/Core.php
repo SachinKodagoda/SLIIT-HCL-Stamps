@@ -3,7 +3,7 @@ class Core
 {
     // Set the default route page details
     protected $currentController = 'Home';
-    protected $currentMethod = 'index';
+    protected $currentMethod = 'home';
     protected $params = [];
     protected $notApage = false;
 
@@ -16,7 +16,7 @@ class Core
         if (isset($url[0])) {
             if (file_exists('../app/controllers/' . strtolower($url[0]) . '.php')) {
                 $this->currentController = ucfirst($url[0]);
-                $this->currentMethod = 'index';
+                $this->currentMethod = strtolower($url[0]);
                 unset($url[0]);
                 $this->notApage = true;
             }else{
@@ -34,7 +34,7 @@ class Core
         if ($this->notApage && isset($url[1])) {
             if (method_exists($this->currentController, strtolower($url[1]))) {
                 $this->currentMethod = strtolower($url[1]);
-                $this->currentMethod = 'index';
+                $this->currentMethod = strtolower($url[1]);
                 unset($url[1]);
             }else{
                 $this->currentController = 'main';
