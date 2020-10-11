@@ -1,9 +1,9 @@
 <?php
 
-class Main extends BaseController
+class Login extends BaseController
 {
 
-    public function page_404()
+    public function login()
     {
         $values = [
             "data" => []

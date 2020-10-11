@@ -19,7 +19,7 @@
     <?php require APPROOT . '/views/modules/header.php'; ?>
     <!-- Main Wrapper -->
     <div class="main_wrapper">
-        <div class="page_dummy">Registration Page</div>
+        <div class="page_dummy">Stamp Page</div>
     </div>
     <!-- Footer -->
     <?php require APPROOT . '/views/modules/footer.php'; ?>
