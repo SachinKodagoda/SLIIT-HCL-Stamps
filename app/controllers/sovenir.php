@@ -1,8 +1,8 @@
 <?php
 
-class Home extends BaseController
+class Sovenir extends BaseController
 {
-    public function home()
+    public function sovenir()
     {
         $values = [
             "data" => []
@@ -10,5 +10,3 @@ class Home extends BaseController
         $this->view("/".__FUNCTION__, $values);
     }
 }
-
-

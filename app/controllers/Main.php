@@ -8,7 +8,7 @@ class Main extends BaseController
         $values = [
             "data" => []
         ];
-        $this->view(strtolower(basename(__FILE__, '.php'))."/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $values);
     }
 
     public function page_404()
@@ -16,6 +16,6 @@ class Main extends BaseController
         $values = [
             "data" => []
         ];
-        $this->view(strtolower(basename(__FILE__, '.php'))."/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $values);
     }
 }

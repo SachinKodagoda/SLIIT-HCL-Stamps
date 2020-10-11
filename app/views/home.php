@@ -35,15 +35,31 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel1.jpg" alt="carousel">
+                        <div class="nameTile">
+                            <div class="name">Souvenir Sheets</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/sovenir',true)">more...</div>
+                        </div>
                     </div>
                     <div class="swiper-slide slide2">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel2.jpg" alt="carousel">
+                        <div class="nameTile">
+                            <div class="name">Post Cards</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/postcard',true)">more...</div>
+                        </div>
                     </div>
                     <div class="swiper-slide slide1">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel1.jpg" alt="carousel">
+                        <div class="nameTile">
+                            <div class="name">First Day Covers</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/firstdaycover',true)">more...</div>
+                        </div>
                     </div>
                     <div class="swiper-slide slide2">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel2.jpg" alt="carousel">
+                        <div class="nameTile">
+                            <div class="name">Stamps</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/stamp',true)">more...</div>
+                        </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

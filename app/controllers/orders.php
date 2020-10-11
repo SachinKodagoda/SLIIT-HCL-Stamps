@@ -2,11 +2,11 @@
 
 class Orders extends BaseController
 {
-    public function index()
+    public function orders()
     {
         $values = [
             "data" => []
         ];
-        $this->view(strtolower(basename(__FILE__, '.php'))."/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $values);
     }
 }

@@ -2,11 +2,11 @@
 
 class Account extends BaseController
 {
-    public function index()
+    public function account()
     {
         $values = [
             "data" => []
         ];
-        $this->view(strtolower(basename(__FILE__, '.php'))."/".__FUNCTION__, $values);
+        $this->view("/".__FUNCTION__, $values);
     }
 }
