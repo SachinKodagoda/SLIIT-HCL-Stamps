@@ -28,9 +28,25 @@
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0; }
+  .main_wrapper .button {
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    margin: 12px;
+    border-radius: 60px;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 6px 3px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+    .main_wrapper .button:active {
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px);
+      box-shadow: none; }
 
 /*# sourceMappingURL=page_404.css.map */

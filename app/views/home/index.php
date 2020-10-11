@@ -7,11 +7,11 @@
     <!-- Common Head Components -->
     <?php require APPROOT . '/views/common/head.php'; ?>
     <!-- Css -->
-    <link rel="stylesheet" type="text/css" href="./css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/home.css" />
-    <link rel="stylesheet" type="text/css" href="./css/modules/header.css" />
-    <link rel="stylesheet" type="text/css" href="./css/modules/footer.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/header.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/footer.css" />
 </head>
 <!-- Body -->
 
@@ -22,7 +22,7 @@
     <div class="main_wrapper">
         <div class="mainTitle">
             <div class="logo">
-                <img src="./img/main/stamp.svg" alt="logo" class="logo_img">
+                <img src="<?php echo URLROOT ?>/img/home/stamp.svg" alt="logo" class="logo_img">
                 <span class="logo_title">STAMP.LK</span>
             </div>
             <div class="titles">
@@ -33,9 +33,20 @@
         <div class="swiper-cover">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">Slide 1</div>
-                    <div class="swiper-slide slide2">Slide 2</div>
-                    <div class="swiper-slide slide3">Slide 3</div>
+                    <div class="swiper-slide slide1">
+                        <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel1.jpg" alt="carousel">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel2.jpg" alt="carousel">
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel1.jpg" alt="carousel">
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel2.jpg" alt="carousel">
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -53,300 +64,300 @@
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
             <div class="starBox">
                 <div class="starBoxInnerBottom">
                     <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="./img/main/stamp1.jpg" alt="stamp" class="stamp" /></div>
+                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
                         <span class="stampTitle">
                             Mahapola 5<sup>th</sup> aniversary
                         </span>
                     </div>
                     <div class="starCover">
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/star.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
-                        <img src="./img/main/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
+                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
                     </div>
                     <div class="moneyCover">
                         <span class="money previous">$10.00</span>
                         <span class="money next">$15.00</span>
                     </div>
                     <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="./img/main/dollar.svg" alt="dollar" class="dollar" />
+                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
                     </div>
                 </div>
             </div>
         </div>
         <div class="pagination">
-            <div class="page arrow"><img src="./img/main/right-arrow.svg" alt="arrow" class="arrow filpX" /></div>
+            <div class="page arrow"><img src="<?php echo URLROOT ?>/img/home/right-arrow.svg" alt="arrow" class="arrow filpX" /></div>
             <div class="page">1</div>
             <div class="page">2</div>
             <div class="page selected">3</div>
             <div class="page">4</div>
             <div class="page">5</div>
-            <div class="page arrow"><img src="./img/main/right-arrow.svg" alt="arrow" class="arrow" /></div>
+            <div class="page arrow"><img src="<?php echo URLROOT ?>/img/home/right-arrow.svg" alt="arrow" class="arrow" /></div>
         </div>
         <div class="commonTopic">
             <div class="leftBorder"></div>
@@ -356,21 +367,21 @@
         <div class="moreCategory">
             <div class="categoryCardOuter">
                 <div class="categoryCard">
-                    <img src="./img/main/stamp2.svg" alt="arrow" class="stampCategory" />
+                    <img src="<?php echo URLROOT ?>/img/home/stamp2.svg" alt="arrow" class="stampCategory" />
                     <span class="stampCategoryTitle">Stamps</span>
                     <span class="stampCategoryBtn">Readmore</span>
                 </div>
             </div>
             <div class="categoryCardOuter">
                 <div class="categoryCard">
-                    <img src="./img/main/email.svg" alt="arrow" class="souvenirCategory" />
+                    <img src="<?php echo URLROOT ?>/img/home/email.svg" alt="arrow" class="souvenirCategory" />
                     <span class="stampCategoryTitle">Souvenir Sheet</span>
                     <span class="stampCategoryBtn">Readmore</span>
                 </div>
             </div>
             <div class="categoryCardOuter">
                 <div class="categoryCard">
-                    <img src="./img/main/paper.svg" alt="arrow" class="firstDayCategory" />
+                    <img src="<?php echo URLROOT ?>/img/home/paper.svg" alt="arrow" class="firstDayCategory" />
                     <span class="stampCategoryTitle">First day Cover</span>
                     <span class="stampCategoryBtn">Readmore</span>
                 </div>
@@ -416,8 +427,8 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/common.js" type="text/javascript"></script>
-    <script src="./js/home.js" type="text/javascript"></script>
+    <script src="<?php echo URLROOT ?>/js/common.js" type="text/javascript"></script>
+    <script src="<?php echo URLROOT ?>/js/home.js" type="text/javascript"></script>
 </body>
 
 </html>

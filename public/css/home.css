@@ -3,7 +3,8 @@
 
 .swiper-container {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  border-radius: 20px; }
 
 .swiper-slide {
   text-align: center;
@@ -15,10 +16,62 @@
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 200px; }
+  height: auto; }
   @media only screen and (min-width: 576px) {
     .swiper-slide {
       height: 300px; } }
+  .swiper-slide .swiper-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative; }
+
+.swiper-pagination-bullet {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #000;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+  outline: none; }
+
+.swiper-pagination-bullet-active {
+  color: #000;
+  background: rgba(248, 177, 25, 0.9); }
+
+.swiper-button-next {
+  color: #000;
+  outline: none;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .swiper-button-next::after {
+    font-size: 16px; }
+
+.swiper-button-prev {
+  color: #000;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .swiper-button-prev::after {
+    font-size: 16px; }
+
+.swiper-button-disabled {
+  display: none; }
 
 .form {
   display: -ms-flexbox;

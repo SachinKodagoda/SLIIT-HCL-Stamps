@@ -10,6 +10,6 @@
 <meta name="theme-color" content="#000">
 <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 <!-- Fonts -->
-<link rel="icon" href="./img/common/sliit.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="<?php echo URLROOT ?>/img/common/sliit.png" type="image/png" sizes="16x16" />
 <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">

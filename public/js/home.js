@@ -1,9 +1,23 @@
 var mySwiper = new Swiper(".swiper-container", {
-  loop: true,
+  loop: false,
   autoplay: {
-    delay: 1500,
+    delay: 3000,
+    disableOnInteraction: false
   },
+  allowTouchMove: false,
   centeredSlides: true,
+  effect: 'fade',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 var initialAccordion = document.getElementById("firstAccordion");

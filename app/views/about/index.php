@@ -7,10 +7,10 @@
     <!-- Common Head Components -->
     <?php require APPROOT . '/views/common/head.php'; ?>
     <!-- Css -->
-    <link rel="stylesheet" type="text/css" href="./css/globals.css" />
-    <link rel="stylesheet" type="text/css" href="./css/about.css" />
-    <link rel="stylesheet" type="text/css" href="./css/modules/header.css" />
-    <link rel="stylesheet" type="text/css" href="./css/modules/footer.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/header.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/footer.css" />
 </head>
 <!-- Body -->
 
@@ -25,8 +25,8 @@
     <?php require APPROOT . '/views/modules/footer.php'; ?>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./js/common.js" type="text/javascript"></script>
-    <script src="./js/about.js" type="text/javascript"></script>
+    <script src="<?php echo URLROOT ?>/js/common.js" type="text/javascript"></script>
+    <script src="<?php echo URLROOT ?>/js/about.js" type="text/javascript"></script>
 </body>
 
 </html>
