@@ -137,9 +137,9 @@
         .logo
             display: flex
             flex-direction: column
-            justify-content: center
+            justify-content: start
             align-items: center
-            border: 4px solid #000000
+            border: 4px solid transparentize(#fff, 0.7)
             border-radius: 100%
             width: 88px
             height: 88px
@@ -147,6 +147,9 @@
             position: relative
             font-size: 10px
             margin: 5px 0
+            background: $navy
+            padding-top: 10px
+            color: #fff
             +MEDIUM
                 margin: 0
             &::before
@@ -157,14 +160,14 @@
                 right: 4px
                 bottom: 4px
                 border-radius: 100%
-                border: 1px solid #000
+                border: 2px solid #ccc
         .logo_img
             width: 36px
             height: 36px
             position: relative
             z-index: 1
         .logo_title
-            margin-top: 2px
+            margin-top: 4px
             position: relative  
             font-weight: 700  
             z-index: 1   

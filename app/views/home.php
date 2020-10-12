@@ -22,7 +22,7 @@
     <div class="main_wrapper">
         <div class="mainTitle">
             <div class="logo">
-                <img src="<?php echo URLROOT ?>/img/home/stamp.svg" alt="logo" class="logo_img">
+                <img src="<?php echo URLROOT ?>/img/home/logo.svg" alt="logo" class="logo_img">
                 <span class="logo_title">STAMP.LK</span>
             </div>
             <div class="titles">
@@ -74,7 +74,7 @@
         </div>
         <form class="form">
             <input type="text" class="input_text" />
-            <input type="submit" value="FILTER" class="input_submit">
+            <input type="submit" value="Search" class="input_submit">
         </form>
         <div class="starBoxCover">
             <div class="starBox">
@@ -385,21 +385,21 @@
                 <div class="categoryCard">
                     <img src="<?php echo URLROOT ?>/img/home/stamp2.svg" alt="arrow" class="stampCategory" />
                     <span class="stampCategoryTitle">Stamps</span>
-                    <span class="stampCategoryBtn">Readmore</span>
+                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/stamp',true)">Readmore</span>
                 </div>
             </div>
             <div class="categoryCardOuter">
                 <div class="categoryCard">
                     <img src="<?php echo URLROOT ?>/img/home/email.svg" alt="arrow" class="souvenirCategory" />
                     <span class="stampCategoryTitle">Souvenir Sheet</span>
-                    <span class="stampCategoryBtn">Readmore</span>
+                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/sovenir',true)">Readmore</span>
                 </div>
             </div>
             <div class="categoryCardOuter">
                 <div class="categoryCard">
                     <img src="<?php echo URLROOT ?>/img/home/paper.svg" alt="arrow" class="firstDayCategory" />
                     <span class="stampCategoryTitle">First day Cover</span>
-                    <span class="stampCategoryBtn">Readmore</span>
+                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/firstdaycover',true)">Readmore</span>
                 </div>
             </div>
         </div>
