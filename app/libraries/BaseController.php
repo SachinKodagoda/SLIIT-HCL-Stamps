@@ -1,6 +1,7 @@
 <?php
 class BaseController
 {
+    // Load models
     public function model($model)
     {
         require_once '../app/models/' . $model . '.php';
@@ -8,13 +9,12 @@ class BaseController
     }
     
     // Load views
-    public function view($view, $data = [])
+    public function view($controler, $method, $data = [])
     {
-        if (file_exists('../app/views/' . $view . '.php')) {
-            require_once '../app/views/' . $view . '.php';
+        if (file_exists('../app/views/' . $controler . '/'. $method . '.php')) {
+            require_once '../app/views/' . $controler . '/'. $method . '.php';
         } else {
-            require_once '../app/views/page_404.php';
-            // die('View does not exist');
+            require_once '../app/views/modules/page_404.php';
         }
     }
 }

@@ -5,7 +5,7 @@
 
 <head>
     <!-- Common Head Components -->
-    <?php require APPROOT . '/views/common/head.php'; ?>
+    <?php require APPROOT . '/views/modules/head.php'; ?>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -76,36 +76,50 @@
             <input type="text" class="input_text" />
             <input type="submit" value="Search" class="input_submit">
         </form>
-        <div class="starBoxCover">
-            <?php foreach ($data['stampData'] as $stampData) : ?>
-                
-                <div class="starBox">
-                <div class="starBoxInnerBottom">
-                    <div class="starBoxInnerTop">
-                        <div class="stampCover"><img src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="stamp" class="stamp" /></div>
-                        <span class="stampTitle">
-                            <?php echo $stampData->stamp_desc; ?>
-                        </span>
+        <?php if (count($data['stampData']) > 0) : ?>
+            <div class="starBoxCover">
+                <?php foreach ($data['stampData'] as $stampData) : ?>
+
+                    <div class="starBox">
+                        <div class="starBoxInnerBottom">
+                            <div class="starBoxInnerTop">
+                                <div class="stampCover">
+                                    <img src="<?php echo URLROOT ?>/img/common/stamps/<?php echo $stampData->stamp_url ?>" alt="stamp" class="stamp <?php echo $stampData->stamp_class ?>" />
+                                </div>
+                                <span class="stampTitle">
+                                    <?php echo $stampData->stamp_desc; ?>
+                                </span>
+                            </div>
+                            <div class="starCover">
+                                <?php
+                                for ($x = 1; $x <= 5; $x++) {
+                                    echo "<img src=\"" . URLROOT . "/img/home/";
+                                    if (floatval($stampData->rating) >= $x) {
+                                        echo "star.svg";
+                                    } else {
+                                        echo "starOff.svg";
+                                    }
+                                    echo "";
+                                    echo "\" alt=\"star\" class=\"star\" />";
+                                }
+                                ?>
+                            </div>
+                            <div class="moneyCover">
+                                <span class="money previous">$<?php echo $stampData->stamp_named_price; ?></span>
+                                <span class="money next">$<?php echo $stampData->stamp_sale_price; ?></span>
+                            </div>
+                            <div class="starBoxInnerBottomBtn">
+                                Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="starCover">
-                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
-                        <img src="<?php echo URLROOT ?>/img/home/star.svg" alt="star" class="star" />
-                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
-                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
-                        <img src="<?php echo URLROOT ?>/img/home/starOff.svg" alt="star" class="star" />
-                    </div>
-                    <div class="moneyCover">
-                        <span class="money previous">$10.00</span>
-                        <span class="money next">$15.00</span>
-                    </div>
-                    <div class="starBoxInnerBottomBtn">
-                        Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
-            <?php endforeach; ?>
-        </div>
-        <div class="pagination">
+        <?php else : ?>
+            <div class="noData">Sorry No data</div>
+        <?php endif; ?>
+
+        <!-- <div class="pagination">
             <div class="page arrow"><img src="<?php echo URLROOT ?>/img/home/right-arrow.svg" alt="arrow" class="arrow filpX" /></div>
             <div class="page">1</div>
             <div class="page">2</div>
@@ -113,6 +127,128 @@
             <div class="page">4</div>
             <div class="page">5</div>
             <div class="page arrow"><img src="<?php echo URLROOT ?>/img/home/right-arrow.svg" alt="arrow" class="arrow" /></div>
+        </div> -->
+        <div class="pagination">
+            <?php
+            // Left Most Navigator <<
+            $leftMostVal = 1;
+            echo "<a href=\"";
+            echo URLROOT;
+            echo "/home/index/$leftMostVal\"";
+            echo " class=\"adjust_line last\">&laquo;</a>";
+
+            // Left Navigator <
+            $leftVal = $data['pageNeeded'] - 1;
+            if ($data['pageNeeded'] - 1 <=  0) {
+                $leftVal = $data['pageNeeded'];
+            }
+            echo "<a href=\"";
+            echo URLROOT;
+            echo "/home/index/$leftVal\"";
+            echo " class=\"adjust_line\">&lt;</a>";
+
+            // Pages 1,2,3..
+            for ($x = 1; $x <= $data['noOfTotalPages']; $x++) {
+                if (($x >= $data['pageNeeded'] - 2) && ($x <= $data['pageNeeded'] + 2)) {
+                    echo "<a href=\"";
+                    echo URLROOT;
+                    echo "/home/index/$x\"";
+                    if ($x == $data['pageNeeded']) {
+                        echo "class=\"active\"";
+                    }
+
+                    if ($data['pageNeeded'] != 1) {
+                        if ($data['pageNeeded'] != 2) {
+                            if ($data['noOfTotalPages'] != $data['pageNeeded']) {
+                                if ($data['noOfTotalPages'] != $data['pageNeeded'] + 1) {
+                                    if (($x == $data['pageNeeded'] + 2) || ($x == $data['pageNeeded'] - 2)) {
+                                        echo "class=\"hideable\"";
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if ($data['pageNeeded'] == 2 && $x == 4) {
+                        echo "class=\"hideable\"";
+                    }
+
+                    if ($data['pageNeeded'] ==  $data['noOfTotalPages'] - 1) {
+                        if (($x ==  $data['pageNeeded'] - 2)) {
+                            echo "class=\"hideable\"";
+                        }
+                    }
+
+                    echo ">$x</a>";
+                } else {
+                    if ($data['pageNeeded'] == 1) {
+                        if ($x == 4) {
+                            echo "<a href=\"";
+                            echo URLROOT;
+                            echo "/home/index/$x\"";
+                            echo "class=\"hideable\"";
+                            echo ">$x</a>";
+                        }
+                        if ($x == 5) {
+                            echo "<a href=\"";
+                            echo URLROOT;
+                            echo "/home/index/$x\"";
+                            echo "class=\"hideable\"";
+                            echo ">$x</a>";
+                        }
+                    } else if ($data['pageNeeded'] == 2) {
+                        if ($x == 5) {
+                            echo "<a href=\"";
+                            echo URLROOT;
+                            echo "/home/index/$x\"";
+                            echo "class=\"hideable\"";
+                            echo ">$x</a>";
+                        }
+                    } else if ($data['pageNeeded'] == $data['noOfTotalPages'] - 1) {
+                        if ($x >= ($data['pageNeeded'] - 3)) {
+                            echo "<a href=\"";
+                            echo URLROOT;
+                            echo "/home/index/$x\"";
+                            if ($x == $data['pageNeeded']) {
+                                echo "class=\"active \"";
+                            } else {
+                                echo "class=\"hideable\"";
+                            }
+                            echo ">$x</a>";
+                        }
+                    } else if ($data['pageNeeded'] == $data['noOfTotalPages']) {
+                        if ($x >= ($data['pageNeeded'] - 4)) {
+                            echo "<a href=\"";
+                            echo URLROOT;
+                            echo "/home/index/$x\"";
+                            if ($x == $data['pageNeeded']) {
+                                echo "class=\"active\"";
+                            } else {
+                                echo "class=\"hideable\"";
+                            }
+                            echo ">$x</a>";
+                        }
+                    }
+                }
+            }
+
+            // Right Navigator >
+            $rightVal = $data['pageNeeded'] + 1;
+            if ($data['pageNeeded'] + 1 >  $data['noOfTotalPages']) {
+                $rightVal = $data['pageNeeded'];
+            }
+            echo "<a href=\"";
+            echo URLROOT;
+            echo "/home/index/$rightVal\"";
+            echo " class=\"adjust_line\">&gt;</a>";
+
+            // Right Most Navigator >>
+            $rightMostVal = $data['noOfTotalPages'];
+            echo "<a href=\"";
+            echo URLROOT;
+            echo "/home/index/$rightMostVal\"";
+            echo " class=\"adjust_line last\">&raquo;</a>";
+            ?>
         </div>
         <div class="commonTopic">
             <div class="leftBorder"></div>
@@ -142,6 +278,7 @@
                 </div>
             </div>
         </div>
+
         <div class="commonTopic">
             <div class="leftBorder"></div>
             <div class="middle">More About Us!</div>
