@@ -37,28 +37,28 @@
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel1.jpg" alt="carousel">
                         <div class="nameTile">
                             <div class="name">Souvenir Sheets</div>
-                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/sovenir',true)">more...</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/sovenir/index',true)">more...</div>
                         </div>
                     </div>
                     <div class="swiper-slide slide2">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel2.jpg" alt="carousel">
                         <div class="nameTile">
                             <div class="name">Post Cards</div>
-                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/postcard',true)">more...</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/postcard/index',true)">more...</div>
                         </div>
                     </div>
                     <div class="swiper-slide slide1">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel1.jpg" alt="carousel">
                         <div class="nameTile">
                             <div class="name">First Day Covers</div>
-                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/firstdaycover',true)">more...</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/firstdaycover/index',true)">more...</div>
                         </div>
                     </div>
                     <div class="swiper-slide slide2">
                         <img class="swiper-image" src="<?php echo URLROOT ?>/img/home/carousel/carousel2.jpg" alt="carousel">
                         <div class="nameTile">
                             <div class="name">Stamps</div>
-                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/stamp',true)">more...</div>
+                            <div class="direction" onclick="navFunction('<?php echo URLROOT ?>/stamp/index',true)">more...</div>
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -260,21 +260,21 @@
                 <div class="categoryCard">
                     <img src="<?php echo URLROOT ?>/img/home/stamp2.svg" alt="arrow" class="stampCategory" />
                     <span class="stampCategoryTitle">Stamps</span>
-                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/stamp',true)">Readmore</span>
+                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/stamp/index',true)">Readmore</span>
                 </div>
             </div>
             <div class="categoryCardOuter">
                 <div class="categoryCard">
                     <img src="<?php echo URLROOT ?>/img/home/email.svg" alt="arrow" class="souvenirCategory" />
                     <span class="stampCategoryTitle">Souvenir Sheet</span>
-                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/sovenir',true)">Readmore</span>
+                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/sovenir/index',true)">Readmore</span>
                 </div>
             </div>
             <div class="categoryCardOuter">
                 <div class="categoryCard">
                     <img src="<?php echo URLROOT ?>/img/home/paper.svg" alt="arrow" class="firstDayCategory" />
                     <span class="stampCategoryTitle">First day Cover</span>
-                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/firstdaycover',true)">Readmore</span>
+                    <span class="stampCategoryBtn" onclick="navFunction('<?php echo URLROOT ?>/firstdaycover/index',true)">Readmore</span>
                 </div>
             </div>
         </div>
