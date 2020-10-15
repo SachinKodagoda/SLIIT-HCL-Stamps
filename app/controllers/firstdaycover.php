@@ -2,11 +2,11 @@
 
 class Firstdaycover extends BaseController
 {
-    public function firstdaycover()
+    public function index()
     {
         $data = [
             'page' => __FUNCTION__
         ];
-        $this->view("/".__FUNCTION__, $data);
+        $this->view(strtolower(__CLASS__),__FUNCTION__, $data);
     }
 }

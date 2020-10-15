@@ -2,13 +2,27 @@
 
 class Home extends BaseController
 {
-    public function home()
+    public function __construct()
     {
+        $this->homeModel = $this->model('StampModel');
+    }
+
+    public function index($param)
+    {
+        $pageNeeded = 1;
+        if (isset($param[0])) {
+            $pageNeeded = $param[0];
+        }
+        $perPage = 10;
+        $noOfTotalPages = $this->homeModel->getPageCount($perPage);
+        $stampData = $this->homeModel->getStampList($perPage, $pageNeeded);
         $data = [
-            'page' => __FUNCTION__
+            'page' => __FUNCTION__,
+            'perPage' => $perPage,
+            'noOfTotalPages' => $noOfTotalPages,
+            'stampData' => $stampData,
+            'pageNeeded' => $pageNeeded
         ];
-        $this->view("/".__FUNCTION__, $data);
+        $this->view(strtolower(__CLASS__),__FUNCTION__, $data);
     }
 }
-
-
