@@ -39,3 +39,17 @@
     right: 0;
     bottom: 0;
 } */
+
+.leftHead{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-weight: bold;
+    color:Red;
+}
+
+.rightHead{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-weight: bold;
+    color:red;
+}
