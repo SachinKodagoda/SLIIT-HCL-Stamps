@@ -17,7 +17,7 @@
     <div class="main_wrapper">
         <div class="page_dummy">
             <div class="title">Log in!</div>
-            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/home',true)">Go Home</span>
+            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/home/index/1',true)">Go Home</span>
         </div>
     </div>
     <!-- JavaScript -->
