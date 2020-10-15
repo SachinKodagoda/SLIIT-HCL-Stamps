@@ -7,7 +7,11 @@
     background: rgba(255, 255, 255, 0.52);
     border-radius: 20px;
     margin: 0 8px 8px;
+<<<<<<< HEAD
     padding: 8px 24px;
+=======
+    padding: 8px;
+>>>>>>> 2b894ff4fe76544c805f30aae6d584defc9b2cc1
     width: calc(100% - 16px);
     min-height: calc(100% - 80px);
     box-shadow: 0 15px 20px 1px rgba(0, 0, 0, 0.2);
@@ -18,7 +22,11 @@
 
 @media only screen and (min-width: 576px) {
     .main_wrapper {
+<<<<<<< HEAD
         padding: 16px 100px;
+=======
+        padding: 16px;
+>>>>>>> 2b894ff4fe76544c805f30aae6d584defc9b2cc1
         width: calc(100% - 32px);
         margin: 0 16px 16px;
     }
@@ -52,4 +60,8 @@
     padding: 20px 0px 20px 0px;
     font-weight: bold;
     color:red;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2b894ff4fe76544c805f30aae6d584defc9b2cc1
