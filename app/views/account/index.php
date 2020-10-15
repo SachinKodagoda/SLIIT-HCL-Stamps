@@ -6,11 +6,7 @@
 <head>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<<<<<<< HEAD
-    <?php require APPROOT . '/views/modules/head.php'; ?>
-=======
     <?php require APPROOT . '/views/common/head.php'; ?>
->>>>>>> 2b894ff4fe76544c805f30aae6d584defc9b2cc1
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/account.css" />
