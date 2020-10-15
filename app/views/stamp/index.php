@@ -5,7 +5,7 @@
 
 <head>
     <!-- Common Head Components -->
-    <?php require APPROOT . '/views/common/head.php'; ?>
+    <?php require APPROOT . '/views/modules/head.php'; ?>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/inner.css" />
@@ -19,7 +19,7 @@
     <?php require APPROOT . '/views/modules/header.php'; ?>
     <!-- Main Wrapper -->
     <div class="main_wrapper">
-        <div class="page_dummy">First Day Cover Page</div>
+        <div class="page_dummy">Stamp Page</div>
     </div>
     <!-- Footer -->
     <?php require APPROOT . '/views/modules/footer.php'; ?>

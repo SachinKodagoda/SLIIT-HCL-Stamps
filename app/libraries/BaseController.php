@@ -1,14 +1,20 @@
 <?php
 class BaseController
 {
-    // Load views
-    public function view($view, $data = [])
+    // Load models
+    public function model($model)
     {
-        if (file_exists('../app/views/' . $view . '.php')) {
-            require_once '../app/views/' . $view . '.php';
+        require_once '../app/models/' . $model . '.php';
+        return new $model();
+    }
+    
+    // Load views
+    public function view($controler, $method, $data = [])
+    {
+        if (file_exists('../app/views/' . $controler . '/'. $method . '.php')) {
+            require_once '../app/views/' . $controler . '/'. $method . '.php';
         } else {
-            require_once '../app/views/page_404.php';
-            // die('View does not exist');
+            require_once '../app/views/modules/page_404.php';
         }
     }
 }

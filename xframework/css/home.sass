@@ -227,24 +227,28 @@
         border-radius: 20px 20px 5px 5px
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: space-between
         align-items: center
         padding: 8px
-        .stamp
-            height: 100%
+        .stampCover
+            width: 100%
+            height: auto
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-grow: 1
+        .stampH
+            max-width: 100%
+            height: auto
+        .stampV
             width: auto
-            display: block
-            &Cover
-                width: 100px
-                height: 100px
-                display: flex
-                justify-content: center
-                align-items: center
+            max-height: 100%
         .stampTitle
             +overflow_ellipsis
             text-align: center
-            padding-top: 8px
+            // padding: 8px 0 2px 0
             font-size: 1rem
+            line-height: 1.1rem
     &InnerBottom
         position: relative
         padding: 85px 6px 30px
@@ -287,54 +291,60 @@
         &.previous
             text-decoration: line-through
             font-size: 1rem
-            color: $black
+            color: $red
             font-weight: 700
         &.next
-            color: $dark-red
+            color: $black
             font-weight: 700
             font-size: 1.2rem
 
-// Pagination 
-.pagination
-    +flex_center
-    margin: 32px 16px 16px
-    cursor: pointer
-    .page
-        +flex_center
-        width: 50px
-        height: 50px
-        background: #000
-        color: #fff
-        transition: all 0.2s ease-in-out
-        border: 2px solid #000
-        &:hover
-            position: relative
-            z-index: 1
-            transform: scale(1.2)
-            border-top-color: $gray
-            border-bottom-color: $gray
-        &:first-child
-            background: red
-            border-radius: 50px 0 0 50px
-        &:last-child
-            background: red
-            border-radius: 0 50px 50px 0
-        .arrow
-            width: 20px
-            height: auto
-        &.arrow
-            &:hover
-                transform: scale(1.2)
-                border-color: #000
-        &.selected
-            background: #ccc
-            color: #000
-            position: relative
-            z-index: 2
-            &:hover
-                transform: scale(1)
-                border-color: #000
-
+// // Pagination 
+// .pagination
+//     +flex_center
+//     margin: 32px 16px 16px
+//     cursor: pointer
+//     .page
+//         +flex_center
+//         width: 50px
+//         height: 50px
+//         background: #000
+//         color: #fff
+//         transition: all 0.2s ease-in-out
+//         border: 2px solid #000
+//         &:hover
+//             position: relative
+//             z-index: 1
+//             transform: scale(1.2)
+//             border-top-color: $gray
+//             border-bottom-color: $gray
+//         &:first-child
+//             background: red
+//             border-radius: 50px 0 0 50px
+//         &:last-child
+//             background: red
+//             border-radius: 0 50px 50px 0
+//         .arrow
+//             width: 20px
+//             height: auto
+//         &.arrow
+//             &:hover
+//                 transform: scale(1.2)
+//                 border-color: #000
+//         &.selected
+//             background: #ccc
+//             color: #000
+//             position: relative
+//             z-index: 2
+//             &:hover
+//                 transform: scale(1)
+//                 border-color: #000
+// No content
+.noData
+    display: flex
+    justify-content: center 
+    align-items: center
+    width: 100%
+    height: 200px
 // More Category area
 .moreCategory
     display: flex
@@ -472,3 +482,53 @@
     width: 100%
     background: #000
     border-radius: 0 0 20px 20px
+// Pagination
+.pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin: 36px 0 0 0
+    & a
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 1.1rem
+        color: black
+        padding: 8px 16px
+        text-decoration: none
+        transition: all .1s ease-in
+        border: 2px solid #000
+        margin: 0 4px
+        background: #000
+        color: #fff
+        border-radius: 5px
+        font-weight: 900
+        +noSelect
+    & a.active
+        cursor: not-allowed
+        text-decoration: underline
+    & a:hover:not(.active)
+        background: #fff
+        color: #000
+        transform: scale(1.2)
+
+.adjust_line
+    align-self: flex-start
+    padding: 6px 16px 10px !important
+    background: #000 !important
+    color: #fff !important
+    &:hover
+        background: #fff !important
+        color: #000 !important
+        transform: scale(1.2)   
+.last
+   background: transparentize($red, 0.1) !important
+   &:first-child
+       border-radius: 20px 5px 5px 20px !important
+   &:last-child
+       border-radius: 5px 20px 20px 5px !important
+.hideable
+    display: none !important
+    +XLARGE
+        display: block !important

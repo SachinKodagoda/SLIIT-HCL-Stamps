@@ -4,11 +4,10 @@
 <!-- Head -->
 
 <head>
-    <!-- Common Head Components -->
-    <?php require APPROOT . '/views/common/head.php'; ?>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php require APPROOT . '/views/modules/head.php'; ?>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/sovenir.css" />
