@@ -78,7 +78,7 @@
         <div class="row">
             <div class="col-md-12">
 
-            <form  method="post" id="userForm" name="userForm"  action="https://www.stamps.lk/index.php/account">
+            <form  method="post" id="userForm" name="userForm"   onsubmit="return validateform()" action="https://www.stamps.lk/index.php/account">
             <fieldset  class="form-group" >         
 
                 <table >
