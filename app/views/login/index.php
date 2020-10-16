@@ -21,18 +21,20 @@
               <div class="header">Stamps</div> <!-- My Room Text in Azerbaijani -->
                 <form action="">
                  
-        <input type="text" placeholder="User Name " required oninvalid="this.setCustomValidity('Xananı doldurun')">
-        <input type="password" placeholder="Password" required oninvalid="this.setCustomValidity('Xananı doldurun')">
-                  </input>    
-  <button class="butt">Log</button>
+        <input type="text" placeholder="User Name " required>
+        <input type="password" placeholder="Password" required >
+                  </input> 
+                   
+
+  <button class="butt"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotPassword/index',true)">Log In</button>
    <span class="signup">
-   <a href="#" class="link">ForgotPassword?&nbsp;</a>
+   <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotPassword/index',true)">ForgotPassword?&nbsp;</a>
        <a href="#" class="link">Sign Up</a></span>
     </form>
 </div>
 </div>
         
-            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotPassword/index',true)">Go Home</span>
+           
         </div>
     </div>
     <!-- JavaScript -->

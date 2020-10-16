@@ -13,11 +13,11 @@
        <div class="box">
           <div class="header">Forgot Password?</div>
             <form action="">
-                     <input type="text" placeholder="ENTER YOUR MAIL ADDRESS" required oninvalid="this.setCustomValidity('Xananı doldurun')">
+                     <input type="text" placeholder="ENTER YOUR MAIL ADDRESS" required >
                   </input>    
-  <button class="forgot">Send Verification Code</button>
+  <button class="forgot" onclick="navFunction('<?php echo URLROOT ?>/verify/index',true)">Send Verification Code</button>
    <span class="signup">
-       <a href="#" class="link">Go back</a></span>
+       <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)">Go back</a></span>
     </form>
 </div>
     </div>
