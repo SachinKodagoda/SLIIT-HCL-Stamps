@@ -1,8 +1,8 @@
 <?php
 
-class Login extends BaseController
+class ForgotPassword extends BaseController
 {
-  
+
     public function index()
     {
         $data = [

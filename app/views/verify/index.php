@@ -18,7 +18,7 @@
        
 <div class="main">
           <div class="box">
-              <div class="header">Stamps</div> <!-- My Room Text in Azerbaijani -->
+              <div class="header">Verify Your Password</div> <!-- My Room Text in Azerbaijani -->
                 <form action="">
                  
         <input type="text" placeholder="User Name " required oninvalid="this.setCustomValidity('Xananı doldurun')">
@@ -32,7 +32,7 @@
 </div>
 </div>
         
-            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotPassword/index',true)">Go Home</span>
+            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/verify/index',true)">Go Home</span>
         </div>
     </div>
     <!-- JavaScript -->
