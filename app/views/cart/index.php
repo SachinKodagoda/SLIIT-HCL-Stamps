@@ -17,15 +17,20 @@
 <body>
 	<!-- Header -->
 	<?php require APPROOT . '/views/modules/header.php'; ?>
+
+		
+
 	<!-- Main Wrapper -->
 	<div class="main_wrapper">
-		<div id="all" style="max-width: 1700px; background: red;">
+	<center><h1 style="font-size: 80px; ">Cart</h1></center>
+
+		<div id="all" style="max-width: 1700px;>
 			<div id="back">
-				<div id="wrapper2" style="width:75%;min-width:200px; z-index: 100; background-color: white; padding: 10px; position: absolute; margin-left: 8%; margin-right: 8%; margin-top: 20px;">
+				<div id="wrapper2" style="width:75%;min-width:200px; z-index: 100; background-color: white; opacity:75%; padding: 10px; position: absolute; border-radius:3px; margin-left: 12%; margin-right: 12%; margin-top: 20px;">
 					<div id="main">
 						<div id="system-message-container">
 						</div>
-						<div id="cart-view" class="cart-view">
+						<div id="cart-view" class="cart-view" style="margin: 20px;">
 							<form method="post" id="checkoutForm" name="checkoutForm" action="https://stamps.lk/index.php/cart">
 								<fieldset class="vm-fieldset-pricelist">
 									<table class="cart-summary" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -37,13 +42,12 @@
 											<th class="vm-cart-item-discount"><span class='priceColor2'>Discount</span></th>
 											<th class="vm-cart-item-total">Total</th>
 										</tr>
-
+							
 
 										<tr style="vertical-align: top" class="sectiontableentry1">
 											<td class="vm-cart-item-name">
 												<input type="hidden" name="cartpos[]" value="0">
-												<span class="cart-images">
-													<img src="/images/virtuemart/product/resized/0632_0x90.jpg" alt="No image set " /> </span>
+												
 												<a href="/index.php/stamps/bicentenary-of-american-revolution-detail">Bicentenary of American Revolution</a>
 												<div class="vm-customfield-cart"></div>
 											</td>
@@ -62,12 +66,11 @@
 												<div class="PricesalesPrice vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricesalesPrice">$0.70</span></div>
 											</td>
 										</tr>
-
+										<br>
 										<tr style="vertical-align: top" class="sectiontableentry2">
 											<td class="vm-cart-item-name">
 												<input type="hidden" name="cartpos[]" value="1">
-												<span class="cart-images">
-													<img src="/images/virtuemart/product/resized/0616_0x90.jpg" alt="0616" /> </span>
+												
 												<a href="/index.php/stamps/diversion-of-the-mahaweli-river-detail">Diversion of the Mahaweli River</a>
 												<div class="vm-customfield-cart"></div>
 											</td>
@@ -121,7 +124,9 @@
 											<td style="text-align: right;"></td>
 											<td style="text-align: right;"> </td>
 										</tr>
+										
 										<tr class="sectiontableentry1" style="vertical-align:top;">
+										
 											<td colspan="4" style="align:left;vertical-align:top;">
 												<fieldset class="vm-payment-shipment-select vm-payment-select">
 													<div class="vm-payment-plugin-single"><input type="radio" data-dynamic-update="1" name="virtuemart_paymentmethod_id" id="payment_id_2" value="2">
@@ -163,17 +168,18 @@
 								<fieldset class="vm-fieldset-customer-note">
 									<div class="cart customer-note" title="">
 										<span class="cart customer-note">Notes and special requests</span>
-
-										<textarea id="customer_note_field" name="customer_note" cols="60" rows="1" class="inputbox" maxlength="2500"></textarea> </div>
-
-								</fieldset>
-
-
+									<br>
+										<textarea id="customer_note_field" name="customer_note" cols="140" rows="5" class="inputbox" maxlength="2500"></textarea> </div>
 
 								</fieldset>
 
-								<div class="checkout-button-top"> <button type="submit" id="checkoutFormSubmit" name="checkout" value="1" class="vm-button-correct" data-dynamic-update="1" style="background:rgb(51, 170, 250); color: black; margin-right: 40%;"><span>Check Out Now</span> </button></div>
 
+
+								</fieldset>
+								<br>
+								<center>
+								<div class="checkout-button-top"> <button type="submit" id="checkoutFormSubmit" name="checkout" value="1" class="vm-button-correct" data-dynamic-update="1" style="background:rgb(51, 170, 250); color: black; border-radius: 3px; padding: 5px; "><span>Check Out Now</span> </button></div> 
+								</center>
 								<input type='hidden' name='order_language' value='' />
 								<input type='hidden' name='task' value='updatecart' />
 								<input type='hidden' name='option' value='com_virtuemart' />

@@ -106,7 +106,7 @@ html {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="1.jpg" alt="Jane" style="width:100%">
+    <img src="<?php echo URLROOT ?>/img/about/1.jpg" alt="img" style="width:100%"/>
       <div class="container">
         <h2>We currently offer</h2>
         
@@ -119,7 +119,7 @@ facility for you to buy philatelic products online.</p>
 
   <div class="column">
     <div class="card">
-      <img src="2.jpg" alt="Mike" style="width:100%">
+    <img src="<?php echo URLROOT ?>/img/about/2.jpg" alt="imh" style="width:100%"/>
       <div class="container">
         <h2>More to come, such as,</h2>
         
@@ -135,7 +135,7 @@ Postal History of Ceylon.</p>
   
   <div class="column">
     <div class="card">
-      <img src="3.jpg" alt="John" style="width:100%">
+    <img src="<?php echo URLROOT ?>/img/about/3.jpg" alt="imi" style="width:100%"/>
       <div class="container">
         <h2>This resource is for you</h2>
         
