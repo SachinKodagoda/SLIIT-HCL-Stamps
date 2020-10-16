@@ -24,7 +24,7 @@
     <!-- Main Wrapper -->
     <div class="main_wrapper">
         <!-- form1 -->
-        <form action="post" autocomplete="off">
+        <form  name="accountForm"action="post" autocomplete="off" onsubmit="return validateform()">
             <div class="row">
                 <div class="col-md-6">
                 
@@ -44,11 +44,11 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                         <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="password1"  name="Password1"  autocomplete="off">
+                        <input type="password" class="form-control" id="password1"  name="password1"  autocomplete="off">
                         </div>
                         <div class="form-group col-md-6">
                         <label for="inputPassword4">Confirm Password</label>
-                        <input type="password" class="form-control" id="password2" name="Password2"  autocomplete="off">
+                        <input type="password" class="form-control" id="password2" name="password2"  autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -373,7 +373,8 @@
                         </div>   
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <!-- <button type="submit" class="btn btn-primary">Register</button> -->
+					<input type="submit" value="submit">
                 </div>
             </div>
         </form>      
