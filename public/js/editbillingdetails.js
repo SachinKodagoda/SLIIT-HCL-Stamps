@@ -16,7 +16,7 @@ function validateform(){
     var atposition=email.indexOf("@");  
     var dotposition=email.lastIndexOf(".");  
     if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
-    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n Hutto email eke dot eka ko dot eka dapan belliye:"+dotposition);  
+    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\:"+dotposition);  
     return false;  
     } 
       
