@@ -85,20 +85,7 @@
             <input require class="btn btn-primary mb-2" type="button" value="Login">
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <a href="#">Forgot your Username?</a>
-        </div>
-        <div class="col">
-            <a href="#">Forgot your Password?</a>
-        </div>
-        <div class="col">
-            <label>Remember me</label>
-            <input require type="checkbox" name="" id="">
-        </div>
-    </div>
 
-    
     </div>
     <!-- Footer -->
     <?php require APPROOT . '/views/modules/footer.php'; ?>
