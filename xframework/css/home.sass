@@ -6,9 +6,14 @@
         margin: 16px 8px
     &-container
         width: 100%
-        height: 100%
+        height: auto
         border-radius: 20px
         box-shadow: 0 0 4px 2px transparentize(#000, 0.8 )
+        min-height: 120px
+        +MEDIUM
+            min-height: auto
+            height: 100%
+            width: 100%
     &-slide
         text-align: center
         font-size: 18px
@@ -19,22 +24,34 @@
         height: auto
         position: relative
         +MEDIUM
-            height: 300px
+            height: auto
+        +XXLARGE
+            height: 250px
         .swiper-image
             display: block
-            width: 100%
-            height: auto
+            width: auto
+            height: 100%
             // filter: contrast(1.1)
+            +MEDIUM
+                width: 100%
+                height: auto
         .nameTile
             position: absolute
             top: 10px
-            right: 10px
+            right: 0
             color: #000
-            width: 200px
+            width: 100%
             background: transparentize(#ffffcc, 0.1 )
-            padding: .5em 2em
-            border-radius: 5px 20px
+            padding: .5em 0
             font-weight: 900
+            display: block
+            +MEDIUM 
+                border-radius: 5px 20px
+                padding: .5em 2em
+                right: 10px
+                width: 200px      
+            +LARGE
+                display: block
             .direction
                 color: $blue
                 font-weight: 400
@@ -59,6 +76,7 @@
 .swiper-pagination-bullet-active
     color: #000
     background: transparentize(#F8B119, 0.1 )
+
 .swiper-button-next
     color: #000
     outline: none
@@ -68,8 +86,14 @@
     width: 32px
     height: 32px
     box-shadow: 0 0 1px 2px transparentize(#000, 0.5 )
+    display: flex
     &::after
         font-size: 16px
+    +MEDIUM
+        display: none
+    +LARGE
+        display: flex
+
 .swiper-button-prev
     color: #000
     border: 4px solid transparentize(#000, 0.9 )
@@ -79,8 +103,13 @@
     width: 32px
     height: 32px
     box-shadow: 0 0 1px 1px transparentize(#000, 0.5 )
+    display: flex
     &::after
         font-size: 16px
+    +MEDIUM
+        display: none
+    +LARGE
+        display: flex
 .swiper-button-disabled
     display: none
 
@@ -298,46 +327,6 @@
             font-weight: 700
             font-size: 1.2rem
 
-// // Pagination 
-// .pagination
-//     +flex_center
-//     margin: 32px 16px 16px
-//     cursor: pointer
-//     .page
-//         +flex_center
-//         width: 50px
-//         height: 50px
-//         background: #000
-//         color: #fff
-//         transition: all 0.2s ease-in-out
-//         border: 2px solid #000
-//         &:hover
-//             position: relative
-//             z-index: 1
-//             transform: scale(1.2)
-//             border-top-color: $gray
-//             border-bottom-color: $gray
-//         &:first-child
-//             background: red
-//             border-radius: 50px 0 0 50px
-//         &:last-child
-//             background: red
-//             border-radius: 0 50px 50px 0
-//         .arrow
-//             width: 20px
-//             height: auto
-//         &.arrow
-//             &:hover
-//                 transform: scale(1.2)
-//                 border-color: #000
-//         &.selected
-//             background: #ccc
-//             color: #000
-//             position: relative
-//             z-index: 2
-//             &:hover
-//                 transform: scale(1)
-//                 border-color: #000
 // No content
 .noData
     display: flex
@@ -365,7 +354,9 @@
         flex-direction: column
         align-items: center
         justify-content: space-between
-        padding: 50px
+        padding: 30px
+        +MEDIUM
+           padding: 50px 
         .firstDayCategory
             height: 100px
             width: auto
@@ -526,8 +517,14 @@
    background: transparentize($red, 0.1) !important
    &:first-child
        border-radius: 20px 5px 5px 20px !important
+       display: none
+       +MEDIUM
+            display: inline-block
    &:last-child
-       border-radius: 5px 20px 20px 5px !important
+        border-radius: 5px 20px 20px 5px !important
+        display: none
+        +MEDIUM
+            display: inline-block
 .hideable
     display: none !important
     +XLARGE
