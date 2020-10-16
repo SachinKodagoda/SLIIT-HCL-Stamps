@@ -23,8 +23,6 @@
 			<div id="back">
 				<div id="wrapper2" style="width:75%;min-width:200px; z-index: 100; background-color: white; padding: 10px; position: absolute; margin-left: 8%; margin-right: 8%; margin-top: 20px;">
 					<div id="main">
-
-
 						<div id="system-message-container">
 						</div>
 						<div id="cart-view" class="cart-view">
@@ -183,17 +181,12 @@
 							</form>
 
 
-							<div style="display:none;" id="cart-js" </div> </div> </div> <!-- end main -->
-							</div><!-- end wrapper -->
-
-
-
-							<div class="wrap"></div>
-						</div> <!-- end contentarea -->
-					</div><!-- back -->
-				</div><!-- all -->
+							<div style="display:none;" id="cart-js"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap"></div>
 			</div>
-
 		</div>
 	</div>
 </body>
