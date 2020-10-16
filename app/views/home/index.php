@@ -108,9 +108,9 @@
                                 <span class="money previous">$<?php echo $stampData->stamp_named_price; ?></span>
                                 <span class="money next">$<?php echo $stampData->stamp_sale_price; ?></span>
                             </div>
-                            <div class="starBoxInnerBottomBtn">
+                            <a class="starBoxInnerBottomBtn" target="_blank" onclick="navFunction('<?php echo URLROOT ?>/stamp/index/<?php echo $stampData->stamp_id ?>',true)">
                                 Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
-                            </div>
+                            </a>
                         </div>
                     </div>
                 <?php endforeach; ?>
