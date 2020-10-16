@@ -11,6 +11,7 @@ class BaseController
     // Load views
     public function view($controler, $method, $data = [])
     {
+        
         if (file_exists('../app/views/' . $controler . '/'. $method . '.php')) {
             require_once '../app/views/' . $controler . '/'. $method . '.php';
         } else {

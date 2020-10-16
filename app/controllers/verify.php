@@ -1,8 +1,9 @@
 <?php
 
-class Login extends BaseController
+class Verify extends BaseController
 {
-  
+    
+
     public function index()
     {
         $data = [
