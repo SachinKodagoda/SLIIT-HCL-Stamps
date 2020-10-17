@@ -19,3 +19,34 @@ function navFunction(loc,action){
         location.replace(loc);
     }
 };
+
+$(function () {
+    var scrl = $("#scrollToItem").val();
+    if (scrl !== '' && $("#"+scrl).length) {
+      $("html, body").animate(
+        {
+          scrollTop: $("#"+scrl).offset().top,
+        },
+        800,
+        function () {
+          // window.location.hash = hash;
+        }
+      );
+    }
+  
+    // $("a").on("click", function (event) {
+    //   if (this.hash !== "") {
+    //     event.preventDefault();
+    //     var hash = this.hash;
+    //     $("html, body").animate(
+    //       {
+    //         scrollTop: $(hash).offset().top,
+    //       },
+    //       800,
+    //       function () {
+    //         window.location.hash = hash;
+    //       }
+    //     );
+    //   }
+    // });
+  });
