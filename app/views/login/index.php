@@ -49,7 +49,7 @@
 
     form {
       display: flex;
-      align-content;
+      align-content: center;
       align-items: center;
       justify-content: center;
       flex-direction: column;
