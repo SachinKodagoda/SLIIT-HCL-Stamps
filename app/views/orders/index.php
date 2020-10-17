@@ -5,6 +5,7 @@
 
 <head>
     <!-- Common Head Components -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <?php require APPROOT . '/views/modules/head.php'; ?>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
@@ -14,20 +15,13 @@
 </head>
 <!-- Body -->
 
-<body>
+<body class="body">
     <!-- Header -->
     <?php require APPROOT . '/views/modules/header.php'; ?>
     <!-- Main Wrapper -->
     <div class="main_wrapper">
     
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body class="body">
+
 
 
 
@@ -39,7 +33,7 @@
         </div>
         <div class="col list-order">
             <p class="alert alert-primary">
-                List Order
+                   List Order
             </p>
         </div>
         <div class="col">
