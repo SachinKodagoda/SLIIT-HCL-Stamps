@@ -21,7 +21,7 @@
               <div class="header">Verify Your Password</div> <!-- My Room Text in Azerbaijani -->
                 <form action="">
                  
-        <input type="number " placeholder="Verification Code" required ></input>
+        <input type="number" placeholder="Verification Code" required ></input>
         <input type="password" placeholder="New Password" required id="txtPassword"></input>
                    
                   <input type="password" placeholder="Confirm Password" required id="txtConfirmPassword" >
