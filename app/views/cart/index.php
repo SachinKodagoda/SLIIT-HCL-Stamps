@@ -22,9 +22,7 @@
 
 	<!-- Main Wrapper -->
 	<div class="main_wrapper">
-	<center><h1 style="font-size: 80px; ">Cart</h1></center>
-
-		<div id="all" style="max-width: 1700px;>
+		<div id="all" style="max-width: 1700px;">
 			<div id="back">
 				<div id="wrapper2" style="width:75%;min-width:200px; z-index: 100; background-color: white; opacity:75%; padding: 10px; position: absolute; border-radius:3px; margin-left: 12%; margin-right: 12%; margin-top: 20px;">
 					<div id="main">
@@ -111,7 +109,7 @@
 
 
 										<tr class="sectiontableentry1" style="vertical-align:top;">
-											<td colspan="4" style="align:left;vertical-align:top;">
+											<td colspan="4" style="text-align:left;vertical-align:top;">
 												<fieldset class="vm-payment-shipment-select vm-shipment-select">
 													<div class="vm-shipment-plugin-single"><input type="radio" data-dynamic-update="1" name="virtuemart_shipmentmethod_id" id="shipment_id_2" value="2" checked="checked">
 														<label for="shipment_id_2"><span class="vmshipment"><span class="vmshipment_name">Normal Post</span></span></label>
@@ -127,7 +125,7 @@
 										
 										<tr class="sectiontableentry1" style="vertical-align:top;">
 										
-											<td colspan="4" style="align:left;vertical-align:top;">
+											<td colspan="4" style="text-align:left;vertical-align:top;">
 												<fieldset class="vm-payment-shipment-select vm-payment-select">
 													<div class="vm-payment-plugin-single"><input type="radio" data-dynamic-update="1" name="virtuemart_paymentmethod_id" id="payment_id_2" value="2">
 														<label for="payment_id_2"><span class="vmpayment"><span class="vmpayment_name">Paypal</span> <span style="color:red;font-weight:bold">Sandbox (2)</span><span class="vmpayment_description">Paypal</span></span></label>

@@ -135,7 +135,7 @@
             echo "<a href=\"";
             echo URLROOT;
             echo "/home/index/$leftMostVal/starbox\"";
-            echo " class=\"adjust_line last/starbox\">&laquo;</a>";
+            echo " class=\"adjust_line last\">&laquo;</a>";
 
             // Left Navigator <
             $leftVal = $data['pageNeeded'] - 1;

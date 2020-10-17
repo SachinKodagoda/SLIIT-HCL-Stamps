@@ -1,0 +1,30 @@
+.main_wrapper {
+    font-size: 1.2rem;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.52);
+    border-radius: 20px;
+    margin: 0 8px 8px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    min-height: calc(100% - 80px);
+    box-shadow: 0 15px 20px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+   
+}
+
+@media only screen and (min-width: 576px) {
+    .main_wrapper {
+        padding: 16px;
+        width: calc(100% - 32px);
+        margin: 0 16px 16px;
+    }
+}
+
+table > tr, td {
+    padding: 5px !important;
+}
+
