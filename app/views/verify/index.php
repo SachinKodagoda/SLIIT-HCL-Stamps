@@ -26,7 +26,7 @@
                    
                   <input type="password" placeholder="Confirm Password" required id="txtConfirmPassword" >
                   </input>    
-  <button class="butt"id="btnSubmit" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)">Submit</button>
+  <button class="butt"id="btnSubmit" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)">Verify</button>
   
    <span class="signup">
    <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotpassword/index',true)">Go back?&nbsp;</a>
@@ -49,11 +49,11 @@
             var confirmPassword = $("#txtConfirmPassword").val();
             if (password != confirmPassword) {
                 alert("Passwords do not match.");
-                return false;
+                return true;
             }
             alert("Password is Correct")
             
-            return true;
+            return false;
         });
     });
 </script>
@@ -62,7 +62,7 @@
 </html>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
   body{
   margin:0;
 }
@@ -84,15 +84,16 @@
 }
 
 .box{
-  width:450px;
-  height:600px;
-  background-color:rgba(0,0,0,0.56);
-  box-shadow:none;
-  display:flex;
-  align-content:center;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+  border-radius: 0px 150px 0px 150px;
+    width: 450px;
+    height: 600px;
+    background-color: rgb(134 81 81 / 68%);
+    box-shadow: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 form{
@@ -105,6 +106,7 @@ form{
   
 }
 .header{
+  
   font-size:30px;
   color:white;
   font-family: 'Exo 2', sans-serif;
@@ -126,7 +128,7 @@ input{
   transition:2s;
   /* margin-right:10px; */
   transition-timing-function:out;
-  margin-bottom:16px;
+  margin-bottom:50px;
   outline:none;
    
 }
@@ -139,9 +141,9 @@ input:focus{
 }
 
 .butt{
-  background-color:rgb(249, 168, 37);
+  background-color:rgb(18 255 222);
   font-size:16px;
-  border-radius:0.15em;
+  border-radius: 50px;
   margin-top:20px;
   border:none;
   width:200px;
@@ -151,7 +153,7 @@ input:focus{
   cursor:pointer;
   transition-timing-function:all-ease-in-out;
   transition-duration:0.5s;
-  margin:0px 5px 10px 10px;
+  margin:0px 5px 50px 10px;
 }
 .butt:hover{
  transform:scale(1.2);
@@ -159,7 +161,7 @@ input:focus{
 
 .signup{
   margin-left:150x;
-  font-size:14px;
+  font-size:16px;
 }
 
 .link{
