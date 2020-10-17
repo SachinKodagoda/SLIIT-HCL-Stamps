@@ -77,7 +77,7 @@
             <input type="submit" value="Search" class="input_submit">
         </form>
         <?php if (count($data['stampData']) > 0) : ?>
-            <div class="starBoxCover">
+            <div class="starBoxCover" id="starbox">
                 <?php foreach ($data['stampData'] as $stampData) : ?>
 
                     <div class="starBox">
@@ -134,8 +134,8 @@
             $leftMostVal = 1;
             echo "<a href=\"";
             echo URLROOT;
-            echo "/home/index/$leftMostVal\"";
-            echo " class=\"adjust_line last\">&laquo;</a>";
+            echo "/home/index/$leftMostVal/starbox\"";
+            echo " class=\"adjust_line last/starbox\">&laquo;</a>";
 
             // Left Navigator <
             $leftVal = $data['pageNeeded'] - 1;
@@ -144,7 +144,7 @@
             }
             echo "<a href=\"";
             echo URLROOT;
-            echo "/home/index/$leftVal\"";
+            echo "/home/index/$leftVal/starbox\"";
             echo " class=\"adjust_line\">&lt;</a>";
 
             // Pages 1,2,3..
@@ -152,7 +152,7 @@
                 if (($x >= $data['pageNeeded'] - 2) && ($x <= $data['pageNeeded'] + 2)) {
                     echo "<a href=\"";
                     echo URLROOT;
-                    echo "/home/index/$x\"";
+                    echo "/home/index/$x/starbox\"";
                     if ($x == $data['pageNeeded']) {
                         echo "class=\"active\"";
                     }
@@ -185,14 +185,14 @@
                         if ($x == 4) {
                             echo "<a href=\"";
                             echo URLROOT;
-                            echo "/home/index/$x\"";
+                            echo "/home/index/$x/starbox\"";
                             echo "class=\"hideable\"";
                             echo ">$x</a>";
                         }
                         if ($x == 5) {
                             echo "<a href=\"";
                             echo URLROOT;
-                            echo "/home/index/$x\"";
+                            echo "/home/index/$x/starbox\"";
                             echo "class=\"hideable\"";
                             echo ">$x</a>";
                         }
@@ -200,7 +200,7 @@
                         if ($x == 5) {
                             echo "<a href=\"";
                             echo URLROOT;
-                            echo "/home/index/$x\"";
+                            echo "/home/index/$x/starbox\"";
                             echo "class=\"hideable\"";
                             echo ">$x</a>";
                         }
@@ -208,7 +208,7 @@
                         if ($x >= ($data['pageNeeded'] - 3)) {
                             echo "<a href=\"";
                             echo URLROOT;
-                            echo "/home/index/$x\"";
+                            echo "/home/index/$x/starbox\"";
                             if ($x == $data['pageNeeded']) {
                                 echo "class=\"active \"";
                             } else {
@@ -220,7 +220,7 @@
                         if ($x >= ($data['pageNeeded'] - 4)) {
                             echo "<a href=\"";
                             echo URLROOT;
-                            echo "/home/index/$x\"";
+                            echo "/home/index/$x/starbox\"";
                             if ($x == $data['pageNeeded']) {
                                 echo "class=\"active\"";
                             } else {
@@ -239,14 +239,14 @@
             }
             echo "<a href=\"";
             echo URLROOT;
-            echo "/home/index/$rightVal\"";
+            echo "/home/index/$rightVal/starbox\"";
             echo " class=\"adjust_line\">&gt;</a>";
 
             // Right Most Navigator >>
             $rightMostVal = $data['noOfTotalPages'];
             echo "<a href=\"";
             echo URLROOT;
-            echo "/home/index/$rightMostVal\"";
+            echo "/home/index/$rightMostVal/starbox\"";
             echo " class=\"adjust_line last\">&raquo;</a>";
             ?>
         </div>
@@ -349,6 +349,7 @@
                 </div>
             </div>
         </div>
+        <input type="hidden" name="view" value="<?php echo $data['view'] ? $data['view'] : '' ?>" id="scrollToItem">
     </div>
     <!-- Footer -->
     <?php require APPROOT . '/views/modules/footer.php'; ?>

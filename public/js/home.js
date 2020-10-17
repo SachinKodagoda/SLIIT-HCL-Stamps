@@ -2,21 +2,21 @@ var mySwiper = new Swiper(".swiper-container", {
   loop: false,
   autoplay: {
     delay: 3000,
-    disableOnInteraction: false
+    disableOnInteraction: false,
   },
   allowTouchMove: true,
   centeredSlides: true,
-  effect: 'fade',
+  effect: "fade",
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -52,3 +52,5 @@ var acc = document.getElementsByClassName("accordion");
 for (var i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", toggleAccordion);
 }
+
+// document.getElementById("starBox").scrollIntoView();

@@ -38,11 +38,13 @@ class Core
             require_once('../app/controllers/' . $this->currentController . '.php');
             $this->currentControllerObject = new $this->currentController;  
         }
+
+        
         
         if(count($url)>2){
             unset($url[0]);
             unset($url[1]);
-            $this->params = $url;
+            $this->params = array_values($url);
         }
         
         call_user_func_array([$this->currentControllerObject, $this->currentMethod], $this->params);
