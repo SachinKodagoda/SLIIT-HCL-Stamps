@@ -12,12 +12,12 @@
     <div class="main">
        <div class="box">
           <div class="header">Forgot Password?</div>
-            <form action="">
-                     <input type="text" placeholder="ENTER YOUR MAIL ADDRESS" required oninvalid="this.setCustomValidity('Xananı doldurun')">
-                  </input>    
-  <button class="forgot">Send Verification Code</button>
+            <form>
+                     <input type="text" placeholder="Enter your email address" required />
+                    
+  <button class="forgot" onclick="navFunction('<?php echo URLROOT ?>/verify/index',true)">Send Verification Code</button>
    <span class="signup">
-       <a href="#" class="link">Go back</a></span>
+       <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)">Go back</a></span>
     </form>
 </div>
     </div>
@@ -52,15 +52,16 @@
 }
 
 .box{
-  width:450px;
-  height:600px;
-  background-color:rgba(0,0,0,0.56);
-  box-shadow:none;
-  display:flex;
-  align-content:center;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+  border-radius: 0px 150px 0px 150px;
+    width: 450px;
+    height: 600px;
+    background-color: rgb(134 81 81 / 68%);
+    box-shadow: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 form{
@@ -94,7 +95,7 @@ input{
   transition:2s;
   /* margin-right:10px; */
   transition-timing-function:out;
-  margin-bottom:16px;
+  margin-bottom:50px;
   outline:none;
    
 }
@@ -109,7 +110,7 @@ input:focus{
 .butt{
   background-color:rgb(249, 168, 37);
   font-size:16px;
-  border-radius:0.15em;
+  border-radius: 50px;
   margin-top:20px;
   border:none;
   width:200px;
@@ -124,7 +125,7 @@ input:focus{
 .forgot{
   background-color:rgb(101 217 126);
   font-size:16px;
-  border-radius:0.15em;
+  border-radius: 50px;
   margin-top:20px;
   border:none;
   width:250px;
@@ -134,7 +135,7 @@ input:focus{
   cursor:pointer;
   transition-timing-function:all-ease-in-out;
   transition-duration:0.5s;
-  margin:0px 5px 10px 10px;
+  margin:0px 5px 50px 10px;
 }
 .butt:hover{
  transform:scale(1.2);

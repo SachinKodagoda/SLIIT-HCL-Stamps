@@ -21,29 +21,48 @@
               <div class="header">Verify Your Password</div> <!-- My Room Text in Azerbaijani -->
                 <form action="">
                  
-        <input type="text" placeholder="User Name " required oninvalid="this.setCustomValidity('Xananı doldurun')">
-        <input type="password" placeholder="Password" required oninvalid="this.setCustomValidity('Xananı doldurun')">
+        <input type="number" placeholder="Verification Code" required ></input>
+        <input type="password" placeholder="New Password" required id="txtPassword"></input>
+                   
+                  <input type="password" placeholder="Confirm Password" required id="txtConfirmPassword" >
                   </input>    
-  <button class="butt">Log</button>
+  <button class="butt"id="btnSubmit" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)">Verify</button>
+  
    <span class="signup">
-   <a href="#" class="link">ForgotPassword?&nbsp;</a>
-       <a href="#" class="link">Sign Up</a></span>
+   <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotpassword/index',true)">Go back?&nbsp;</a>
+ 
     </form>
 </div>
 </div>
         
-            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/verify/index',true)">Go Home</span>
+         
         </div>
     </div>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="<?php echo URLROOT ?>/js/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {
+            var password = $("#txtPassword").val();
+            var confirmPassword = $("#txtConfirmPassword").val();
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return true;
+            }
+            alert("Password is Correct")
+            
+            return false;
+        });
+    });
+</script>
 </body>
 
 </html>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
+    @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
   body{
   margin:0;
 }
@@ -65,15 +84,16 @@
 }
 
 .box{
-  width:450px;
-  height:600px;
-  background-color:rgba(0,0,0,0.56);
-  box-shadow:none;
-  display:flex;
-  align-content:center;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+  border-radius: 0px 150px 0px 150px;
+    width: 450px;
+    height: 600px;
+    background-color: rgb(134 81 81 / 68%);
+    box-shadow: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 form{
@@ -86,9 +106,10 @@ form{
   
 }
 .header{
-  font-size:50px;
+  
+  font-size:30px;
   color:white;
-  font-family:Sacramento;
+  font-family: 'Exo 2', sans-serif;
  margin-bottom:40px;
   letter-spacing:5px;
 
@@ -107,7 +128,7 @@ input{
   transition:2s;
   /* margin-right:10px; */
   transition-timing-function:out;
-  margin-bottom:16px;
+  margin-bottom:50px;
   outline:none;
    
 }
@@ -120,9 +141,9 @@ input:focus{
 }
 
 .butt{
-  background-color:rgb(249, 168, 37);
+  background-color:rgb(18 255 222);
   font-size:16px;
-  border-radius:0.15em;
+  border-radius: 50px;
   margin-top:20px;
   border:none;
   width:200px;
@@ -132,7 +153,7 @@ input:focus{
   cursor:pointer;
   transition-timing-function:all-ease-in-out;
   transition-duration:0.5s;
-  margin:0px 5px 10px 10px;
+  margin:0px 5px 50px 10px;
 }
 .butt:hover{
  transform:scale(1.2);
@@ -140,7 +161,7 @@ input:focus{
 
 .signup{
   margin-left:150x;
-  font-size:14px;
+  font-size:16px;
 }
 
 .link{
