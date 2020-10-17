@@ -21,20 +21,19 @@
               <div class="header">Stamps</div> <!-- My Room Text in Azerbaijani -->
                 <form action="">
                  
-        <input type="text" placeholder="User Name " required>
-        <input type="password" placeholder="Password" required >
-                  </input> 
-                   
-
-  <button class="butt"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotPassword/index',true)">Log In</button>
+        <input type="text" placeholder="User Name " required=>
+        <input type="password" placeholder="Password" required)">
+                  </input>    
+  <button class="butt" >Log In</button>
+  
    <span class="signup">
-   <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotPassword/index',true)">ForgotPassword?&nbsp;</a>
-       <a href="#" class="link">Sign Up</a></span>
+   <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotpassword/index',true)">ForgotPassword?&nbsp;</a>
+       <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/account/index',true)">Sign Up</a></span>
     </form>
 </div>
 </div>
         
-           
+            <span class="button" onclick="navFunction('<?php echo URLROOT ?>/home/index',true)">Go Home</span>
         </div>
     </div>
     <!-- JavaScript -->
