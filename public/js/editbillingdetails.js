@@ -1,15 +1,15 @@
 function validateform(){  
     var username=document.userForm.username.value;  
     var displayname=document.userForm.displayname.value;
-    var companyname=document.userForm.company.value;  
-    var firstname=document.userForm.first_name.value;
-    var middlename=document.userForm.middle_name.value;  
-    var lastname=document.userForm.last_name.value;
-    var zipcode=document.userForm.zip.value;  
+    var company=document.userForm.company.value;  
+    var first_name=document.userForm.first_name.value;
+    var middle_name=document.userForm.middle_name.value;  
+    var last_name=document.userForm.last_name.value;
+    var zip=document.userForm.zip.value;  
     var city=document.userForm.city.value;
-    var address1=document.userForm.address_1.value;  
+    var address_1=document.userForm.address_1.value;  
     var address2=document.userForm.address_2.value;
-    var password1=document.userForm.password.value;
+    var password=document.userForm.password.value;
     var password2=document.userForm.password2.value;  
     var email=document.userForm.email.value;  
 
