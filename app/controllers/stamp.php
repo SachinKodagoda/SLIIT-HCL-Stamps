@@ -9,6 +9,7 @@ class Stamp extends BaseController
     
     public function index($id)
     {
+        echo $id;
         $stampData = $this->homeModel->findStampById($id);
         $data = [
             'page' => strtolower(__CLASS__),

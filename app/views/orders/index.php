@@ -20,66 +20,55 @@
     <?php require APPROOT . '/views/modules/header.php'; ?>
     <!-- Main Wrapper -->
     <div class="main_wrapper">
-    
+        <div class="container main_container">
 
+            <div class="row">
+                <div class="col">
 
+                </div>
+                <div class="col list-order">
+                    <p class="alert alert-primary">
+                        List Order
+                    </p>
+                </div>
+                <div class="col">
 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="alert alert-warning">Track My order</p>
+                </div>
 
-<div class="container main_container">
-    
-    <div class="row">
-        <div class="col">
-    
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input require class="form-control" type="text" placeholder="Enter Order Number" />
+                </div>
+                <div class="col">
+                    <input require class="form-control" type="password" placeholder="Enter Secret Key" />
+                </div>
+                <div class="col">
+                    <input require class="btn btn-primary mb-2" type="button" value="See Order" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="alert alert-warning">If you are already registered, Please Login...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input require class="form-control" type="text" placeholder="Enter Username" name="" id="">
+                </div>
+                <div class="col">
+                    <input require class="form-control" type="password" placeholder="Enter Password" name="" id="">
+                </div>
+                <div class="col">
+                    <input require class="btn btn-primary mb-2" type="button" value="Login">
+                </div>
+            </div>
         </div>
-        <div class="col list-order">
-            <p class="alert alert-primary">
-                   List Order
-            </p>
-        </div>
-        <div class="col">
-            
-        </div>
-    </div>
-
-
-
-    <div class="row">
-        <div class="col">
-            <p class="alert alert-warning">Track My order</p>
-        </div>
-        
-    </div>
-
-
-    <div class="row">
-        <div class="col">
-           <input require class="form-control" type="text" placeholder="Enter Order Number"/>
-        </div>
-        <div class="col">
-            <input require class="form-control" type="password" placeholder="Enter Secret Key" />
-        </div>
-        <div class="col">
-           <input require class="btn btn-primary mb-2" type="button" value="See Order" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p class="alert alert-warning">If you are already registered, Please Login...</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <input require class="form-control" type="text" placeholder="Enter Username" name="" id="">
-        </div>
-        <div class="col">
-            <input require class="form-control" type="password" placeholder="Enter Password" name="" id="">
-        </div>
-        <div class="col">
-            <input require class="btn btn-primary mb-2" type="button" value="Login">
-        </div>
-    </div>
-
     </div>
     <!-- Footer -->
     <?php require APPROOT . '/views/modules/footer.php'; ?>

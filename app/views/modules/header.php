@@ -7,7 +7,7 @@
             <img src="<?php echo URLROOT ?>/img/modules/header/user.svg" alt="user_img" class="user_img filpX" />
         </div>
         <div class="imageContainer">
-            <img src="<?php echo URLROOT ?>/img/modules/header/logout.svg" alt="logout_img" class="logout_img" />
+            <img src="<?php echo URLROOT ?>/img/modules/header/logout.svg" alt="logout_img" class="logout_img" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)"/>
         </div>
     </div>
     <div class="header_navBar">

@@ -5,10 +5,12 @@
 
 <head>
     <!-- Common Head Components -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php require APPROOT . '/views/modules/head.php'; ?>
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/globals.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/inner.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/stamp.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/header.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo URLROOT ?>/css/modules/footer.css" />
 </head>
@@ -22,7 +24,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="<?php echo URLROOT ?>/img/home/stamp1.jpg" alt="Card image" id="myImg" style="width:100%">
+                    <img src="<?php echo URLROOT ?>/img/common/stamps/<?php echo $data['stampData']->stamp_url ?>" alt="Card image" class="card-img-top" id="myImg" style="width:100%"/>
                     <!-- image model popup -->
                     <div id="myModal" class="modal">
                         <span class="close">&times;</span>
@@ -31,7 +33,7 @@
                     </div>
 
                     <div class="card-body">
-                        <div class="stampTitle"> Mahapola 5<sup>th</sup> aniversary</div>
+                        <div class="stampTitle"><?php echo $data['stampData']->stamp_desc ?></div>
 
                         <div class="starCover">
                             <span class="fa fa-star checked"></span>
@@ -40,7 +42,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
-                        <div class="money previous stampTitle"><del>$10.00</del> $15.00</div>
+                        <div class="money previous stampTitle"><del>$<?php echo $data['stampData']->stamp_named_price ?></del>&nbsp; $<?php echo $data['stampData']->stamp_sale_price ?></div>
 
                         <div class="addcartbtn stampTitle">
                             <button type="button" class="btn btn-primary ">Add to Cart</button>
