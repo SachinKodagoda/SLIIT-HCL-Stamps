@@ -18,27 +18,45 @@
        
 <div class="main">
           <div class="box">
-              <div class="header">Stamps</div> <!-- My Room Text in Azerbaijani -->
+              <div class="header">Verify Your Password</div> <!-- My Room Text in Azerbaijani -->
                 <form action="">
                  
-        <input type="text" placeholder="User Name " required=>
-        <input type="password" placeholder="Password" required)">
+        <input type="number " placeholder="Verification Code" required ></input>
+        <input type="password" placeholder="New Password" required id="txtPassword"></input>
+                   
+                  <input type="password" placeholder="Confirm Password" required id="txtConfirmPassword" >
                   </input>    
-                  
-  <button class="butt"  >Log In</button>
+  <button class="butt"id="btnSubmit" onclick="navFunction('<?php echo URLROOT ?>/login/index',true)">Submit</button>
   
    <span class="signup">
-   <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotpassword/index',true)">ForgotPassword?&nbsp;</a>
-       <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/account/index',true)">Sign Up</a></span>
+   <a href="#" class="link"  class="button" onclick="navFunction('<?php echo URLROOT ?>/forgotpassword/index',true)">Go back?&nbsp;</a>
+ 
     </form>
 </div>
 </div>
         
-            
+         
+        </div>
     </div>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="<?php echo URLROOT ?>/js/common.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {
+            var password = $("#txtPassword").val();
+            var confirmPassword = $("#txtConfirmPassword").val();
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            alert("Password is Correct")
+            
+            return true;
+        });
+    });
+</script>
 </body>
 
 </html>
@@ -87,9 +105,9 @@ form{
   
 }
 .header{
-  font-size:50px;
+  font-size:30px;
   color:white;
-  font-family:Sacramento;
+  font-family: 'Exo 2', sans-serif;
  margin-bottom:40px;
   letter-spacing:5px;
 
