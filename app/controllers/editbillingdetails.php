@@ -5,7 +5,7 @@ class Editbillingdetails extends BaseController
     public function index()
     {
         $data = [
-            'page' => __FUNCTION__
+            'page' => strtolower(__CLASS__)
         ];
         $this->view(strtolower(__CLASS__),__FUNCTION__, $data);
     }

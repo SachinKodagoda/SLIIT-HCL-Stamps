@@ -5,7 +5,7 @@ class Main extends BaseController
     public function index()
     {
         $data = [
-            'page' => __FUNCTION__
+            'page' => strtolower(__CLASS__)
         ];
         $this->view(strtolower(__CLASS__),__FUNCTION__, $data);
     }
@@ -13,7 +13,7 @@ class Main extends BaseController
     public function page_404()
     {
         $data = [
-            'page' => __FUNCTION__
+            'page' => strtolower(__CLASS__)
         ];
         $this->view(strtolower(__CLASS__),__FUNCTION__, $data);
     }

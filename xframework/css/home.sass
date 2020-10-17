@@ -139,7 +139,7 @@
         color: #fff
         border: none
         border-radius: 50px
-        +MEDIUM
+        +LARGE
             margin: 0 8px
 
 // Body wrapper
@@ -287,6 +287,7 @@
         background: transparentize(#fff, 0.7)
         border-radius: 5px 5px 20px 20px
     &InnerBottomBtn
+        cursor: pointer
         display: flex
         justify-content: center
         align-items: center
@@ -396,13 +397,13 @@
         .about
             height: auto
             max-width: 600px
-            margin: 0 0 16px
+            margin: 0 0 16px 0
             border: 2px solid #000
             padding: 10px
             background:#FFD7AA
             +MEDIUM
                 padding: 20px
-                margin: 0 16px
+                margin: 16px
         .aboutInner
             width: 100%
             height: auto
@@ -467,12 +468,7 @@
 .accordionActive:after
   content: "\2212"
 
-// Body footer
-.footerArea
-    min-height: 400px
-    width: 100%
-    background: #000
-    border-radius: 0 0 20px 20px
+
 // Pagination
 .pagination
     display: flex
@@ -529,3 +525,55 @@
     display: none !important
     +XLARGE
         display: block !important
+// Body footer
+.footerArea
+    height: auto
+    width: 100%
+    background: #000
+    border-radius: 0 0 20px 20px
+    padding: 0 20px 20px 20px
+.footerRibbon
+    color: #fff
+    display: flex
+    justify-content: space-evenly
+    align-items: flex-start
+    width: 100%
+    height: auto
+    flex-direction: column
+    border: 2px dashed $yellow
+    flex-wrap: wrap
+    padding: 0
+    border-radius: 0 0 20px 20px
+    +MEDIUM
+        padding: 30px 0
+        flex-direction: row
+    .ribbonItem
+        width: 100%
+        height: auto
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        text-align: left
+        display: flex
+        padding: 24px
+        +MEDIUM
+            width: 50%
+        +LARGE
+            width: 300px
+        .ribbonHead
+            margin: 15px 0
+            font-weight: 900
+            text-decoration: underline
+            color: $red
+        .ribbonBody
+            margin: 6px 0
+            color: #fff
+.paymentType
+    display: flex
+    background: #fff
+    padding: 5px 10px
+    border-radius: 50px
+    .pay
+        height: 30px
+        width: auto
+        margin: 0 10px

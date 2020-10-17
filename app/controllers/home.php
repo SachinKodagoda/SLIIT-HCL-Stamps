@@ -17,7 +17,7 @@ class Home extends BaseController
         $noOfTotalPages = $this->homeModel->getPageCount($perPage);
         $stampData = $this->homeModel->getStampList($perPage, $pageNeeded);
         $data = [
-            'page' => __FUNCTION__,
+            'page' => strtolower(__CLASS__),
             'perPage' => $perPage,
             'noOfTotalPages' => $noOfTotalPages,
             'stampData' => $stampData,

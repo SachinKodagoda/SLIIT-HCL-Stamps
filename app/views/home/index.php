@@ -108,9 +108,9 @@
                                 <span class="money previous">$<?php echo $stampData->stamp_named_price; ?></span>
                                 <span class="money next">$<?php echo $stampData->stamp_sale_price; ?></span>
                             </div>
-                            <a class="starBoxInnerBottomBtn" target="_blank" onclick="navFunction('<?php echo URLROOT ?>/stamp/index/<?php echo $stampData->stamp_id ?>',true)">
-                                Buy Now<img src="<?php echo URLROOT ?>/img/home/dollar.svg" alt="dollar" class="dollar" />
-                            </a>
+                            <div class="starBoxInnerBottomBtn" onclick="navFunction('<?php echo URLROOT ?>/stamp/index/<?php echo $stampData->stamp_id ?>',true)">
+                                More Details
+                            </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -312,7 +312,43 @@
                 <path fill="#000" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,122.7C480,139,600,213,720,234.7C840,256,960,224,1080,181.3C1200,139,1320,85,1380,58.7L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#007acc;"></path>
             </svg>
         </div>
-        <div class="footerArea"></div>
+        <div class="footerArea">
+            <div class="footerRibbon">
+                <div class="ribbonItem">
+                    <div class="ribbonHead"><span class="underlined">Location</span></div>
+                    <div class="ribbonBody">20/19 - 1/1, St Anne's Road, St Anne's Garden, Aweriwatta, Srilanka</div>
+                    <div class="ribbonBody">Phone: +94765742200</div>
+                    <div class="ribbonBody">Fax: +312258946</div>
+                    <div class="ribbonHead"><span class="underlined">Opens</span></div>
+                    <div class="ribbonBody">From Monday to Friday: 10.00AM to 6.00PM</div>
+                </div>
+                <div class="ribbonItem">
+                    <div class="ribbonHead"><span class="underlined">Customer Care</span></div>
+                    <div class="ribbonBody">➡ Order Cancellation</div>
+                    <div class="ribbonBody">➡ FAQ</div>
+                    <div class="ribbonBody">➡ My Account</div>
+                    <div class="ribbonBody">➡ Orders & Returns</div>
+                    <div class="ribbonBody">➡ Store Locator</div>
+                    <div class="ribbonBody">➡ Contact Us</div>
+                    <div class="ribbonHead"><span class="underlined">Events</span></div>
+                    <div class="ribbonBody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, dolor? </div>
+                </div>
+                <div class="ribbonItem">
+                    <div class="ribbonHead"><span class="underlined">About</span></div>
+                    <div class="ribbonBody">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, dolor? </div>
+                    <div class="ribbonHead"><span class="underlined">Payment</span></div>
+                    <div class="ribbonBody">
+                        <div class="paymentType">
+                            <img src="<?php echo URLROOT ?>/img/home/paypal.svg" alt="pay" class="pay" />
+                            <img src="<?php echo URLROOT ?>/img/home/american-express.svg" alt="pay" class="pay" />
+                            <img src="<?php echo URLROOT ?>/img/home/mastercard.svg" alt="pay" class="pay" />
+                            <img src="<?php echo URLROOT ?>/img/home/visa.svg" alt="pay" class="pay" />
+                            <img src="<?php echo URLROOT ?>/img/home/bitcoin.svg" alt="pay" class="pay" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <?php require APPROOT . '/views/modules/footer.php'; ?>
